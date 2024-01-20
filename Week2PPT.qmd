@@ -1,0 +1,228 @@
+---
+format: 
+    revealjs:
+      auto-stretch: false
+      include-in-header: [assets/header.html]
+      chalkboard: true
+      slide-number: c/t
+  #    width: 1600
+  #    height: 900
+      footer: "Week 2: XaringanPrac • LWX"
+      highlight-style: github
+      code-copy: true
+      code-line-numbers: true
+      controls: true
+  #    css: ["theme/theme.css"]
+      theme: [moon, slides.scss]
+      echo: true
+title: "Week 2: XaringanPrac • LWX"
+#subtitle: Slides with revealjs
+author: <a href="https://www.ucl.ac.uk/bartlett/casa/people/dr-andrew-maclachlan">Andy MacLachlan</a><br> The Barlett Centre for Advanced Spatial Analysis, UCL <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /><div class="container">
+  <span><a href="https://twitter.com/andymaclachlan"><i class="fab fa-twitter"></i> andymaclachlan</a></span><br><br>
+  <span><a href="https://github.com/andrewmaclachlan?tab=repositories"><i class="fab fa-github"></i> andrewmaclachlan</a></span> <br><br>
+  <span><a href="mailto:a.maclachlan@ucl.ac.uk"><i class="fa fa-envelope"></i> a.maclachlan@ucl.ac.uk</a></span>
+title-slide-attributes:
+  data-background-image: "img/CASA_Logo_no_text.png"
+  data-background-size: cover
+  data-background-position: center
+  data-background-opacity: '0.17'
+logo: "img/CASA_logo.png"
+---
+
+## Talk overview
+
+<br/>
+
+**Sensor**
+
+-   Part 1: **Summary**
+
+-   Part 2: **Application**
+
+-   Part 3: **Reflection**
+
+<br/>
+
+## Who am i
+
+::: columns
+::: {.column width="50%"}
+-   Student in Urban Spatial Science at CASA, UCL
+
+-   learn MSc modules in:
+
+    -   [Geographic information systems and science](https://andrewmaclachlan.github.io/CASA0005repo/)
+    -   [Remotely sensing cities and environments](https://andrewmaclachlan.github.io/CASA0023/)
+
+-   skills:
+
+    -   programming languages such as java, python, R, sql...
+
+    -   Arcgis, Qgis, Arcgis online
+:::
+
+::: {.column width="50%"}
+```{=html}
+<center><iframe width="500" height="350" src="https://andrewmaclachlan.github.io/CASA0023/" title="Quarto Documentation"></iframe></center>
+```
+:::
+:::
+
+## Part 1: **Summary** {.center}
+
+## What do we mean
+
+• The **summary** criterion will refer to the summary of the sensor you have selected -- **Landset**
+
+##### Landsat imagery {auto-animate="true"}
+
+> Landsat imagery is the longest free temporal image repository of consistent medium resolution data. It collects data at each point on Earth each every **16 days** (temporal resolution) in a raster grid composed of **30 by 30 m cells** (spatial resolution). Geographical analysis and concepts are becoming ever more entwined with remote sensing and Earth observation.
+
+::: {style="font-size: 60%;"}
+Source: [CASA0023](https://andrewmaclachlan.github.io/CASA0023/intro.html#landsat)
+:::
+
+##### Access the data
+
+> To access the Landsat data we will use in this practical you can need to sign up for a free account at: https://earthexplorer.usgs.gov/
+
+::: {style="font-size: 60%;"}
+Source: [usgs](https://earthexplorer.usgs.gov/)
+:::
+
+## 
+
+[![image for Landset (website language: Chinese)](img/sonser/LandsatLook.png){fig-align="center" width="100%"}](https://sasclouds.com/chinese/satellite/global/landsat)
+
+## 
+
+##### Landsat 8
+
+> Landsat 8 is a satellite in the Landsat program, which is a series of Earth-observing satellites operated by the United States Geological Survey (USGS) and NASA. Landsat 8, launched in 2013, is the latest satellite in this series, and it carries the Operational Land Imager (OLI) and Thermal Infrared Sensor (TIRS) instruments
+
+::: {style="font-size: 60%;"}
+Source: [UK Government](https://www.gov.uk/government/publications/future-of-cities-science-of-cities)
+:::
+
+##### Landsat 1
+
+> Landsat 1, was launched on July 23, 1972. It marked the beginning of the Landsat program, which has been instrumental in Earth observation and remote sensing
+
+::: {style="font-size: 60%;"}
+Source: [Wikipedia](https://en.wikipedia.org/wiki/Urban_science)
+:::
+
+## Part 2: **Application** {.center}
+
+## What is **Application of the Landset 8**?
+
+::: columns
+::: {.column width="49%"}
+-   **Land Use Monitoring:** Tracks changes in land use and cover over time.
+-   **Environmental Monitoring:** Captures data on natural disasters and assesses environmental impact.
+-   **Agricultural Management:** Monitors crop health, aids precision agriculture, and estimates yields.
+-   **Water Resources Management:** Tracks water bodies, assesses water quality, and manages water resources.
+-   **Forestry:** Monitors forest cover, detects deforestation, and assesses forest health.
+-   **Urban Planning:** Assists in monitoring urban growth, infrastructure changes, and their environmental impact.
+-   **Climate Studies:** Contributes to climate research by providing data on land surface temperature and snow cover.
+-   **Disaster Response:** Provides high-resolution images for assessing damage caused by natural disasters.
+-   **Scientific Research:** Supports research in ecology, geology, hydrology, and atmospheric sciences.
+-   **Mapping and Cartography:** Essential for creating detailed and up-to-date maps, including land cover and terrain features.
+:::
+
+::: {.column width="49%"}
+![](img/3d_globe.jpg){fig-align="center" width="548"}
+:::
+:::
+
+## What is general application of **Landset 8**?
+
+**Overall**
+
+Landsat 8, launched in 2013, is a pivotal Earth-observing satellite widely utilized for applications such as monitoring land use changes, assessing environmental impact, managing agriculture by monitoring crop health and yields, tracking water resources, evaluating forestry conditions, aiding urban planning, contributing to climate studies, supporting disaster response with high-resolution imagery, facilitating scientific research across various disciplines, and serving as a crucial tool in mapping and cartography for detailed and up-to-date geographic information.
+
+## application of **Landset 8** {auto-animate="true"}
+
+## application of **Landset 8** {auto-animate="true"}
+
+<br/> <br/>
+
+**Land Use Monitoring**: Landsat 8 imagery is widely used to monitor changes in land use and land cover over time. This is crucial for urban planning, agriculture, forestry, and environmental management
+
+::: {style="font-size: 150%;"}
+::: center-xy
+**+**
+:::
+:::
+
+## application of **Landset 8** {auto-animate="true"}
+
+<br/> <br/>
+
+**Land Use Monitoring**: Landsat 8 imagery is widely used to monitor changes in land use and land cover over time. This is crucial for urban planning, agriculture, forestry, and environmental management
+
+::: {style="font-size: 150%;"}
+::: center-xy
+**+**
+:::
+:::
+
+<br/> <br/>
+
+**Environmental Monitoring**: The satellite is used to monitor environmental changes, including deforestation, desertification, and the impacts of natural disasters such as floods and wildfires.
+
+## application of **Landset 8** {auto-animate="true"}
+
+<br/> <br/>
+
+**Land Use Monitoring**: Landsat 8 imagery is widely used to monitor changes in land use and land cover over time. This is crucial for urban planning, agriculture, forestry, and environmental management
+
+::: {style="font-size: 150%;"}
+::: center-xy
+**+**
+:::
+:::
+
+<br/> <br/>
+
+**Environmental Monitoring**: The satellite is used to monitor environmental changes, including deforestation, desertification, and the impacts of natural disasters such as floods and wildfires.
+
+::: {style="font-size: 150%;"}
+::: center-xy
+**=**
+:::
+:::
+
+<br/> <br/>
+
+**Urban Planning**: Landsat 8 data is employed in urban planning and development. It aids in monitoring urban growth, assessing infrastructure changes, and studying the impact of urbanization on the environment.
+
+::: {style="font-size: 60%;"}
+Source: [Smart Cities, European Comission](https://commission.europa.eu/eu-regional-and-urban-development/topics/cities-and-urban-development/city-initiatives/smart-cities_en)
+:::
+
+## Overall:
+
+The continuous acquisition of data by Landsat 8, along with its moderate spatial resolution (30 meters for most bands), spectral capabilities, and global coverage, makes it a versatile tool for a wide range of applications in Earth observation and remote sensing.
+
+## Limitation {.center}
+
+### Part 3: reflection? {.center}
+
+## **Limitations:**
+
+1.  **Spatial Resolution:** While Landsat 8 provides valuable data, its spatial resolution (30 meters for most bands) may not be sufficient for certain applications requiring very high detail, such as urban planning at a local scale.
+
+2.  **Temporal Resolution:** Landsat 8 has a revisit time of 16 days, which means it may not capture events or changes on a daily or weekly basis. For some applications, more frequent revisit times are necessary.
+
+3.  
+
+    ## **Limited Spectral Bands:** Landsat 8 has fewer spectral bands compared to some other remote sensing satellites, which limits its ability to capture certain types of information, especially in the infrared and shortwave infrared regions.
+
+4.  **Cloud Cover:** Cloud cover can hinder the acquisition of clear imagery, impacting the availability of data for certain regions and time periods.
+
+5.  **Data Processing:** Analyzing Landsat data requires specialized software and expertise, and the large volume of data can pose challenges for storage and processing.
+
+## Conclusion
+
+-   Despite these limitations, Landsat 8 remains a valuable tool for a wide range of applications, contributing significantly to our understanding of Earth's dynamics and changes over time.

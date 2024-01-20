@@ -1,0 +1,18 @@
+# Week1
+
+This is a book created from markdown and included week1 note.
+
+```{r}
+1 + 1
+```
+```{r}
+
+```
+
+
+```{r, echo = FALSE, out.width='40%'}
+xaringanExtra::embed_xaringan(
+  url = "https://liangweixian11.github.io/RemoteSense/TestXRG.html#1",
+  ratio = "16:9")
+```
+

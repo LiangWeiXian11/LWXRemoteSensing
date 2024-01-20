@@ -1,0 +1,27 @@
+project:
+  type: book
+
+book:
+  title: "LWXRemoteSensing"
+  author: "Norah Jones"
+  date: "2024/1/20"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - week1.qmd
+    - week2.qmd
+    - week3.qmd
+    - week4.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
