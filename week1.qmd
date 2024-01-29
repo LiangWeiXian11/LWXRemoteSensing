@@ -2,17 +2,74 @@
 
 This is a book created from markdown and included week1 note.
 
-```{r}
-1 + 1
-```
-```{r}
+## Summary
 
-```
+### what is the RS
 
+**Remote Sensing (RS)** == acquiring information from a distance by NASA
 
-```{r, echo = FALSE, out.width='40%'}
-xaringanExtra::embed_xaringan(
-  url = "https://liangweixian11.github.io/RemoteSense/TestXRG.html#1",
-  ratio = "16:9")
-```
+**Overall**:
 
+-   Active and passive remote sensing
+
+-   Considered how electromagnetic waves interact with
+
+    -   Earth's surface
+
+    -   Atmosphere
+
+-   Explored the 4 resolutions of remotely sensed data
+
+    -   Spectral
+
+    -   Spatial
+
+    -   Temporal
+
+    -   Radiometric
+
+-   Identified how constraints (environmental or sensor) can dictate the choice of data we use.
+
+### two types of sensor:
+
+**Passive:**
+
+-   Use energy that is available
+
+-   Don't emit anything
+
+-   Detecting reflected energy from the sun
+
+-   Energy is in electromagnetic waves
+
+-   Such as: Human eye, camera, satellite sensor
+
+**Active:**
+
+-   Have an energy source for illumination
+
+-   Actively emits electormagentic waves and then waits to receive
+
+-   Such as: Radar, X-ray, LiDAR
+
+**image of working principles**
+
+![Passive and active sensors systems working principles. Source: [Nadhir Al-Ansari](https://www.researchgate.net/figure/Passive-and-active-sensors-systems-working-principles-24_fig2_344464269)](img/week1/PassiveActiveSensors.png)
+
+### Electromagnetic radiation (EMR)
+
+### Atmospheric Acattering
+
+## Application
+
+### Why is the sky blue (or red)?
+
+### Synthetic Aperture Radar (SAR)
+
+### Data formats
+
+### resolutions
+
+## Reflection
+
+### New terms

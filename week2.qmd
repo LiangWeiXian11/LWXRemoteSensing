@@ -1,9 +1,10 @@
-# Introduction
+# Week2
 
-This is a book created from markdown and executable code.
+This week I select Landset 8 to describe. Here is The [link](https://liangweixian11.github.io/RemoteSense/TestXRG.html#1). And it is also possible to browse directly on the following pages
 
-See @knuth84 for additional discussion of literate programming.
 
-```{r}
-1 + 1
+```{r, echo = FALSE, out.width='40%'}
+xaringanExtra::embed_xaringan(
+  url = "https://liangweixian11.github.io/RemoteSense/TestXRG.html#1",
+  ratio = "16:9")
 ```
