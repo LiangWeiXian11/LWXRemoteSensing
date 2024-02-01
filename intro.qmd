@@ -1,11 +1,10 @@
 # Week {num} name
 
 ## Summary
-This week we mainly talk about two main section: 
 
+This week we mainly talk about two main section:
 
 ## Application
-
 
 ## Reflection
 
