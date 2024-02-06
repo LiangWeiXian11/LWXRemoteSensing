@@ -1,6 +1,4 @@
-# Week1
-
-This is a book created from markdown and included week1 note.
+# Week1 Introduction
 
 ## Summary
 
@@ -58,18 +56,74 @@ This is a book created from markdown and included week1 note.
 
 ### Electromagnetic radiation (EMR)
 
-### Atmospheric Acattering
+### Atmospheric scattering
+
+Atmospheric scattering is a fundamental process in physics and atmospheric science that describes the interaction of electromagnetic radiation with particles suspended in the Earth's atmosphere. This interaction causes light to deviate from its original path and scatter in various directions.
+
+**Three types** of atmospheric scattering
+
+-   Rayleigh = particles are very small compared to the wavelength (Rayleigh scattering)
+
+-   Mie = particles are the same size compared to the wavelength
+
+-   Non selective = particles are much larger than the wavelength
 
 ## Application
 
 ### Why is the sky blue (or red)?
 
+1.  Smaller wavelengths scatter easier - These are the blue hues
+
+2.  When the sun's **angle changes** the blue light scatter doesn't reach our eyes as the **distance is increased**, so **longer wavelengths** reach us (reds and oranges).
+
+3.  Firstly, the number of air molecules the beam of light encounters. The more air molecules or the greater amount of atmosphere which the light beam encounters, the greater the scattering.
+
+4.  Secondly, **the shorter the wavelength of the light the greater the scattering**. So if we take a beam of light such as that from the Sun, which contains multiple colours, then the shorter wavelengths (violet, indigo and blue light) are scattered more than the longer wavelengths such as orange and red.
+
+![Different colors. Source: [Explaining Science](https://explainingscience.org/2015/09/30/why-is-the-sky-blue/)](img/week1/redsunsetdiagram1.png)
+
+**This is why the colour of the sky changes with the time of day!**
+
 ### Synthetic Aperture Radar (SAR)
+
+-   Collects data on various weather conditions
+    -   as Wavelength dictates how far it can penetrate into medium, it can See through clouds, volcanic ash and atmospheric conditions
+    -   SAR uses microwave signals, which travel through the atmosphere with relatively little interference. This means that even in rainy weather or dense fog, SAR is able to penetrate these weather layers and acquire information on the surface of the earth.
+-   Collects data at night
+    -   SAR systems are usually equipped with their own transmitting sources, so they are not dependent on external light sources and can provide reliable imaging capability at any time of day.
+    -   Thus, the availability of SAR in the dark makes it a powerful tool for monitoring the Earth's surface on a 24-hour basis, especially when emergency response or disaster monitoring is required.
 
 ### Data formats
 
-### resolutions
+-   band interleaved by line (BIL)
+-   band sequential (BSQ)
+-   band interleaved by pixel (BIP)
+-   GeoTIFF (most common)
 
 ## Reflection
 
+In conclusion, studying this week's content has given me a basic understanding of remote sensing. From the sensors used to obtain remote sensing data, to Electromagnetic radiation and the wavelength, to the final data and four different resolutions, these aspects gave us an overall understanding of the remote sensing data collection process and the basic format of the remote sensing data,which is a good start of the foundation for the subsequent content.
+
+In addition, by learning about active (using Synthetic Aperture Radar (SAR) as an example) and passive sensors, we learnt about the similarities and differences between different types of sensors. What'more, the real principles of the changing colours of the sky were also learnt.
+
 ### New terms
+
+-   Electromagnetic radiation 电磁辐射
+
+-   scatter 散射
+
+-   particles 粒子
+
+-   molecules 微粒
+
+-   spectral signature 光谱特征
+
+    -   different features with unique radiation pattern
+
+-   radiant energy 辐射能
+
+    -   Energy carried by EMR waves
+
+-   radiant flux 辐射通量
+
+    -   Energy per unit of time

@@ -1,7 +1,6 @@
-# Week2
+# Week2 ppt
 
 This week I select Landset 8 to describe. Here is The [link](https://liangweixian11.github.io/RemoteSense/TestXRG.html#1). And it is also possible to browse directly on the following pages
-
 
 ```{r, echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(

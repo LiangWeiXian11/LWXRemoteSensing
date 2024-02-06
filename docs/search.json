@@ -16,7 +16,7 @@
   {
     "objectID": "week2.html",
     "href": "week2.html",
-    "title": "3  Week2",
+    "title": "2  Week2 ppt",
     "section": "",
     "text": "This week I select Landset 8 to describe. Here is The link. And it is also possible to browse directly on the following pages"
   },
@@ -30,7 +30,7 @@
   {
     "objectID": "week4.html",
     "href": "week4.html",
-    "title": "5  Introduction",
+    "title": "4  Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
@@ -72,9 +72,9 @@
   {
     "objectID": "week1.html#summary",
     "href": "week1.html#summary",
-    "title": "2  Week1",
-    "section": "2.1 Summary",
-    "text": "2.1 Summary\n\n2.1.1 what is the RS\nRemote Sensing (RS) == acquiring information from a distance by NASA\nOverall:\n\nActive and passive remote sensing\nConsidered how electromagnetic waves interact with\n\nEarth’s surface\nAtmosphere\n\nExplored the 4 resolutions of remotely sensed data\n\nSpectral\nSpatial\nTemporal\nRadiometric\n\nIdentified how constraints (environmental or sensor) can dictate the choice of data we use.\n\n\n\n2.1.2 two types of sensor:\nPassive:\n\nUse energy that is available\nDon’t emit anything\nDetecting reflected energy from the sun\nEnergy is in electromagnetic waves\nSuch as: Human eye, camera, satellite sensor\n\nActive:\n\nHave an energy source for illumination\nActively emits electormagentic waves and then waits to receive\nSuch as: Radar, X-ray, LiDAR\n\nimage of working principles\n\n\n\nPassive and active sensors systems working principles. Source: Nadhir Al-Ansari\n\n\n\n\n2.1.3 Electromagnetic radiation (EMR)\n\n\n2.1.4 Atmospheric Acattering"
+    "title": "1  Week1 Introduction",
+    "section": "1.1 Summary",
+    "text": "1.1 Summary\n\n1.1.1 what is the RS\nRemote Sensing (RS) == acquiring information from a distance by NASA\nOverall:\n\nActive and passive remote sensing\nConsidered how electromagnetic waves interact with\n\nEarth’s surface\nAtmosphere\n\nExplored the 4 resolutions of remotely sensed data\n\nSpectral\nSpatial\nTemporal\nRadiometric\n\nIdentified how constraints (environmental or sensor) can dictate the choice of data we use.\n\n\n\n1.1.2 two types of sensor:\nPassive:\n\nUse energy that is available\nDon’t emit anything\nDetecting reflected energy from the sun\nEnergy is in electromagnetic waves\nSuch as: Human eye, camera, satellite sensor\n\nActive:\n\nHave an energy source for illumination\nActively emits electormagentic waves and then waits to receive\nSuch as: Radar, X-ray, LiDAR\n\nimage of working principles\n\n\n\nPassive and active sensors systems working principles. Source: Nadhir Al-Ansari\n\n\n\n\n1.1.3 Electromagnetic radiation (EMR)\n\n\n1.1.4 Atmospheric scattering\nAtmospheric scattering is a fundamental process in physics and atmospheric science that describes the interaction of electromagnetic radiation with particles suspended in the Earth’s atmosphere. This interaction causes light to deviate from its original path and scatter in various directions.\nThree types of atmospheric scattering\n\nRayleigh = particles are very small compared to the wavelength (Rayleigh scattering)\nMie = particles are the same size compared to the wavelength\nNon selective = particles are much larger than the wavelength"
   },
   {
     "objectID": "week1.html#rs",
@@ -86,15 +86,78 @@
   {
     "objectID": "week1.html#application",
     "href": "week1.html#application",
-    "title": "2  Week1",
-    "section": "2.2 Application",
-    "text": "2.2 Application\n\n2.2.1 Why is the sky blue (or red)?\n\n\n2.2.2 Synthetic Aperture Radar (SAR)\n\n\n2.2.3 Data formats\n\n\n2.2.4 resolutions"
+    "title": "1  Week1 Introduction",
+    "section": "1.2 Application",
+    "text": "1.2 Application\n\n1.2.1 Why is the sky blue (or red)?\n\nSmaller wavelengths scatter easier - These are the blue hues\nWhen the sun’s angle changes the blue light scatter doesn’t reach our eyes as the distance is increased, so longer wavelengths reach us (reds and oranges).\nFirstly, the number of air molecules the beam of light encounters. The more air molecules or the greater amount of atmosphere which the light beam encounters, the greater the scattering.\nSecondly, the shorter the wavelength of the light the greater the scattering. So if we take a beam of light such as that from the Sun, which contains multiple colours, then the shorter wavelengths (violet, indigo and blue light) are scattered more than the longer wavelengths such as orange and red.\n\n\n\n\nDifferent colors. Source: Explaining Science\n\n\nThis is why the colour of the sky changes with the time of day!\n\n\n1.2.2 Synthetic Aperture Radar (SAR)\n\nCollects data on various weather conditions\n\nas Wavelength dictates how far it can penetrate into medium, it can See through clouds, volcanic ash and atmospheric conditions\nSAR uses microwave signals, which travel through the atmosphere with relatively little interference. This means that even in rainy weather or dense fog, SAR is able to penetrate these weather layers and acquire information on the surface of the earth.\n\nCollects data at night\n\nSAR systems are usually equipped with their own transmitting sources, so they are not dependent on external light sources and can provide reliable imaging capability at any time of day.\nThus, the availability of SAR in the dark makes it a powerful tool for monitoring the Earth’s surface on a 24-hour basis, especially when emergency response or disaster monitoring is required.\n\n\n\n\n1.2.3 Data formats\n\nband interleaved by line (BIL)\nband sequential (BSQ)\nband interleaved by pixel (BIP)\nGeoTIFF (most common)"
   },
   {
     "objectID": "week1.html#reflection",
     "href": "week1.html#reflection",
-    "title": "2  Week1",
-    "section": "2.3 Reflection",
-    "text": "2.3 Reflection\n\n2.3.1 New terms"
+    "title": "1  Week1 Introduction",
+    "section": "1.3 Reflection",
+    "text": "1.3 Reflection\nIn conclusion, studying this week’s content has given me a basic understanding of remote sensing. From the sensors used to obtain remote sensing data, to Electromagnetic radiation and the wavelength, to the final data and four different resolutions, these aspects gave us an overall understanding of the remote sensing data collection process and the basic format of the remote sensing data,which is a good start of the foundation for the subsequent content.\nIn addition, by learning about active (using Synthetic Aperture Radar (SAR) as an example) and passive sensors, we learnt about the similarities and differences between different types of sensors. What’more, the real principles of the changing colours of the sky were also learnt.\n\n1.3.1 New terms\n\nElectromagnetic radiation 电磁辐射\nscatter 散射\nparticles 粒子\nmolecules 微粒\nspectral signature 光谱特征\n\ndifferent features with unique radiation pattern\n\nradiant energy 辐射能\n\nEnergy carried by EMR waves\n\nradiant flux 辐射通量\n\nEnergy per unit of time"
+  },
+  {
+    "objectID": "week3.html#summary",
+    "href": "week3.html#summary",
+    "title": "3  Week 3 Correction",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\nThis week we mainly talk about two main section, one is correction, another is about images enhancement. There are lots of reasons cause images become incorrect, which will bring lots of inconvenience in further analysis. All these factors will bring some obstacles for our following research. In that case, it is necessary to correct and enhance images. Although there are many methods which can improve the quality of images, different methods need to be chosen carefully for different scenarios and purposes.\n\n3.1.1 Corrections\n\n3.1.1.1 Geometric correction\nGeometric correction refers to the process of correcting distortions in spatial data, particularly in images or maps, to ensure accurate representation of the Earth’s surface. The goal of geometric correction is to align the features in the data with their true geographic locations.\nsome key points:\n\nSelection of Control Points\nControl points are identifiable features that have known geographic coordinates. These points are used to establish a relationship between the spatial data and the real-world coordinates.\nhow to select ?\nIn the spatial data, some clearly recognisable features or characteristics are selected, such as road intersections, building corners, river crossings, etc. These features should be clearly visible in the image and have a well-defined location geographically.\nTransformation Model\n-- the relationship between the control points (the spatial data) and their corresponding real-world coordinates. Common transformation models include polynomial transformations, affine transformations, or rubber sheeting.\nResampling\n\nNearest Neighbor\nLinear\nCubic\nCubic spline\n\n\nwe must re-sample the final raster because we can adjust the pixel values of the corrected image to the new pixel grid.\n\n\n3.1.1.2 Atmospheric correction\nAtmospheric corrections help to remove the effects of atmospheric media (which would reduce contrast of image) on remotely sensed images in order to obtain more accurate surface reflectance or radiance values, resulting in better contrast between images acquired at different times and locations.\nHow to do?\nDark object subtraction (DOS): Searches each band for the darkest value then subtracts that from each pixel. (Some objects’ DN values are theoretically 0, such as deep water bodies or shadows.Therefore, any value that it has can be attributed to the atmosphere and need to be removed.\n\n\n3.1.1.3 Topographic correction\nOrthorectification is a geometric correction process applied to satellite or aerial imagery to remove distortions caused by terrain variations, sensor viewing angles, and Earth curvature\n\n\n3.1.1.4 Radiometric correction\nconvert TOA radiance to TOA reflectance\n\nRadiance is how much light the sensor sees.\nReflectance is the ratio of light leaving the target to amount striking the target. Here will still have atmopsheric effects in the way of our true apparent reflectance. Confusingly all of these can be termed reflectance and indeed sometimes radiance is referred to as reflectance.\n\nThe purpose of radiometric correction is to standardize pixel values across an image, making it more consistent and suitable for quantitative analysis.\n\n\n3.1.1.5 Different level\n\nLevel 1 is delivered as a Digital Number (DN 值)\nLevel 2 includes surface reflectance and surface temperature\nLevel 3 science products are specific products generated from the data such as Burned Area, surface water extent\n\n\n\n\n3.1.2 enhancement\n\n3.1.2.1 Radio\n\nNDVI: (NIR-RED) / (NIR+RED)\nNDWI: (NIR - SWIR) / (NIR + SWIR)\n( NIR is the reflectance in the near-infrared band; SWIR is the reflectance in the shortwave infrared band.)\n\n\n\n3.1.2.2 PCA\nPrincipal Component Analysis (PCA) is designed to reduce the dimensionality of our data.\nRunning the summary will given the proportion of variance explained by each PCA component and the cumulative proportion of the variance explained (from all the PCA layers compared to the original input data). Overall, PCA is trying to:\n\nTransform multi-spectral data into uncorrelated and smaller dataset\nKeep most of the original information\nThe first component will (should) capture most of the variance within the dataset\n\n“A big take-away from this is that system of linear equations are equivalent to a rotation of coordinate systems, which are change of perspective”\n\nPCA chooses the new axes sequentially one after another--PCA looks at the data from all possible angles and figures out which of the infinite number of perspectives spread out the data the most. The first new axis is the one which the data are maximally spread out. So the first new axis would have the most information for distinguishing the points from each other.\n“Loading is the correlation between an original variable and a principal component.”\nCracking Principal Components Analysis (PCA) — Part 2 | by Hyeon Gu Kim | Medium\n\n\n\n3.1.3 Filtering\n\nFiltering refers to any kind of moving window operation to our data which can be saved as a separate raster file. As we saw in the lecture this can include low or high pass filters.\n\n\n3.1.3.1 low pass\na smoothing (low-pass filter 低通滤波) algorithm will take the mean value of a 3-x-3 cell kernel, and place the output value in the location of the central cell.\n\n\n3.1.3.2 high pass\nEdge enhancement:\n\naccentuates or highlights the boundaries and edges of objects within an image.\nThe goal is to make the edges more visually prominent and improve the overall sharpness and clarity of the image\n\nWhere is edge? the change in pixel values"
+  },
+  {
+    "objectID": "week3.html#application",
+    "href": "week3.html#application",
+    "title": "3  Week 3 Correction",
+    "section": "3.2 Application",
+    "text": "3.2 Application\n\n3.2.1 application of Corrections\nDigitising paper maps is a process of aligning paper maps with modern geographic coordinate systems so that they can be used for vectorisation and integration with other GIS datasets. This process can facilitate the effective use of historical maps, house plans, etc. in a modern GIS environment. (Geometric correction)\nNDVI is an index of vegetation condition that is based on reflectance in the red and near-infrared bands, and therefore atmospheric influences need to be taken into account before it can be calculated. Atmospheric correction is crucial for precise quantitative analysis and vegetation monitoring. If your application requires accurate reflectance values or vegetation indices, it is advisable to conduct atmospheric correction to eliminate atmospheric effects. (Atmospheric correction)\n\n\n3.2.2 enhancement\n\n3.2.2.1 PCA\n\n\n3.2.2.2 smooth"
+  },
+  {
+    "objectID": "week3.html#reflection",
+    "href": "week3.html#reflection",
+    "title": "3  Week 3 Correction",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection\nThe week’s content was most valuable in enhancing our comprehension of various calibration techniques for remote sensing image data. It also provided an introduction to the principles of linking and enhancement. Although a significant portion of remote sensing data is pre-calibrated before acquisition, it remains crucial for us to comprehend the processing steps, as not all data undergoes this preparation. Additionally, a thorough understanding of the suitability and constraints of different methods is essential for their identification and critical evaluation in future applications."
+  },
+  {
+    "objectID": "intro.html#summary",
+    "href": "intro.html#summary",
+    "title": "1  Week {num} name",
+    "section": "1.1 Summary",
+    "text": "1.1 Summary\nThis week we mainly talk about two main section:"
+  },
+  {
+    "objectID": "intro.html#application",
+    "href": "intro.html#application",
+    "title": "1  Week {num} name",
+    "section": "1.2 Application",
+    "text": "1.2 Application"
+  },
+  {
+    "objectID": "intro.html#reflection",
+    "href": "intro.html#reflection",
+    "title": "1  Week {num} name",
+    "section": "1.3 Reflection",
+    "text": "1.3 Reflection\n\n1.3.1 new terms"
+  },
+  {
+    "objectID": "week4.html#summary-to-be-done",
+    "href": "week4.html#summary-to-be-done",
+    "title": "4  Week 4 name",
+    "section": "4.1 Summary – to be done",
+    "text": "4.1 Summary – to be done\nThis week we mainly talk about two main section:"
+  },
+  {
+    "objectID": "week4.html#application",
+    "href": "week4.html#application",
+    "title": "4  Week 4 name",
+    "section": "4.2 Application",
+    "text": "4.2 Application"
+  },
+  {
+    "objectID": "week4.html#reflection",
+    "href": "week4.html#reflection",
+    "title": "4  Week 4 name",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection\n\n4.3.1 new terms"
   }
 ]

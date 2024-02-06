@@ -1,9 +1,11 @@
-# Introduction
+# Week 4 name
 
-This is a book created from markdown and executable code.
+## Summary -- to be done
 
-See @knuth84 for additional discussion of literate programming.
+This week we mainly talk about two main section:
 
-```{r}
-1 + 1
-```
+## Application
+
+## Reflection
+
+### new terms

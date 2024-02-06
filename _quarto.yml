@@ -4,11 +4,10 @@ project:
 
 book:
   title: "LWXRemoteSensing"
-  author: "Norah Jones"
+  author: "Weixian Liang"
   date: "2024/1/20"
   chapters:
     - index.qmd
-    - intro.qmd
     - week1.qmd
     - week2.qmd
     - week3.qmd
