@@ -1,10 +1,90 @@
-# Week 4 name
+# Week 4 Policy
 
-## Summary -- to be done
+## Summary
 
-This week we mainly talk about two main section:
+### Shenzhen
 
-## Application
+1.  As Shenzhen's dense population and socio-economic activities have caused greater disturbance and pressure on the ecological environment, the overall ecological landscape fragmentation index has been rising, resulting in insufficient ecological connectivity between green spaces, ecological space showing a trend of isolation and fragmentation, and the function of ecological corridor connectivity needs to be upgraded.
+
+2.  The layout of ecological open space is not balanced, and the accessibility and connectivity of facilities need to be improved. The distribution of existing parks faces problems such as low green space resources per capita and unbalanced green ecological development in different regions, and the quality and functions of ecological open space need to be upgraded. The connectivity of the park network and pedestrian accessibility need to be improved.
+
+\<Circular of the Shenzhen Municipal People's Government on the Issuance of the Shenzhen Park City Construction Master Plan and Three-Year Action Plan (2022-2024)\>
+
+### Main policy challenges and targets
+
+1.  Rehabilitation of inefficient forests and middle-aged and young-aged forests to accurately improve forest quality.
+
+    Requirements: Foster and inter-forest the large, concentrated and continuous middle- and young-aged forests in the natural country parks to promote forest phase renovation. Promote the growth of trees, cut down poor quality trees, improve the quality of forests and tree stock, and enhance the forest carbon sink.
+
+2.  Improve the quality of water source conservation forests in important water source areas and strengthen the effect of soil and water conservation.
+
+    Conduct forest phase renovation and middle-aged and young forest nurturing for fast-growing plantation pure forests around water source protection zones.
+
+3.  Promoting urban greening and upgrading greening quality
+
+    Analyse the shortcomings of greening in urban areas and delineate key areas for boulevard construction and three-dimensional greening construction
+
+4.  Promoting the construction of boulevards
+
+    Comprehensively promote the construction and nurturing of boulevards on roads whose shade coverage rate does not meet the standards, enhance the coverage rate of boulevards in built-up areas of cities, and promote the linking of boulevards into pieces.
+
+5.  Connecting mountain and water ecological corridor networks
+
+    1.  Connecting natural mountains and green areas by means of eco-green corridors or eco-bridges to facilitate the connectivity of mountain and forest green corridors
+
+    2.  To make use of the close proximity of lakes and reservoirs and their neighbouring forest resources to form a network through country trails and lakes and reservoirs.
+
+## Application of EO data (to solve the policy challenge)
+
+### 1.Rehabilitation of inefficient forests and middle-aged and young-aged forests to accurately improve forest quality.
+
+Identify inefficient forests and young and middle-aged forests to provide a basis for subsequent accurate improvement of forest quality.
+
+1.  Extraction of large-scale concentrated and continuous young and middle-aged forests by NDVI index.
+
+    1.  Calculate ndvi by using the red and near-infrared bands of Landset data.
+
+    2.  Extracting areas with large ndvi values as targets for subsequent improvement.
+
+2.  Identifying poor quality trees
+
+    1.  NDVI can be used to assess the health of vegetation. Since NDVI can be used to reflect the sparseness and growth status of vegetation, the vegetation index value of poor quality forests is usually lower than that of healthy forests.
+
+    2.  DEM can reflect the slope and height of the terrain, and poor-quality forest trees are sometimes distributed in areas with steep terrain. Therefore, we can use DEM to assist in identifying poor quality vegetation.
+
+### 2.Improve the quality of water source conservation forests in important water source areas and strengthen the effect of soil and water conservation.
+
+Identify the woodland around the water protection zone and count the area
+
+1.  calculate NDWI index for water body extraction using Landset data (landset - NDWI)
+
+2.  vegetation around water bodies extracted using NDVI
+
+### 3.Promoting urban greening and upgrading greening quality
+
+Calculate the accessibility of green space in each region (per capita) and determine the priority areas for greening construction
+
+1.  use landset to calculate NDVI to get the total area of green space in each region
+
+2.  quantify the green space accessibility per capita by network analysis using population raster data and road vector data
+
+### 4.Promoting the construction of boulevards
+
+Identification of roads with substandard shade coverage rate
+
+1.  Identify trees around roads through road vector data and high-precision remote sensing images (less than 1M spatial resolution) collected by drones
+
+2.  Identify roads with low shade coverage through regional statistics, as a subsequent focus of construction, to improve the coverage of shade roads in urban built-up areas
+
+### 5.Connecting mountain and water ecological corridor networks
+
+Identification of water bodies, forests and green spaces and identification of ecological corridors connecting them
+
+1.  Landset-ndvi,ndwi and DEM data to extract water bodies, forests and green spaces.
+
+2.  Construction of cost rasters from DEM and urban landuse rasters.
+
+3.  Calculate minimum cost ecological corridors through arcgis corridor analysis.
 
 ## Reflection
 
