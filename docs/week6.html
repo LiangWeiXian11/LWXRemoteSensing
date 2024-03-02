@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>LWXRemoteSensing - 3&nbsp; Week 3 Correction</title>
+<title>LWXRemoteSensing - 5&nbsp; Week 6 GEE</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./week4.html" rel="next">
-<link href="./week2.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./week4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 Correction</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week6.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6 GEE</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -119,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week3.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week3.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 Correction</span></span></a>
   </div>
 </li>
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week6.html" class="sidebar-item-text sidebar-link">
+  <a href="./week6.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6 GEE</span></span></a>
   </div>
 </li>
@@ -157,18 +157,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#corrections" id="toc-corrections" class="nav-link" data-scroll-target="#corrections"><span class="header-section-number">3.1.1</span> Corrections</a></li>
-  <li><a href="#enhancement" id="toc-enhancement" class="nav-link" data-scroll-target="#enhancement"><span class="header-section-number">3.1.2</span> enhancement</a></li>
-  <li><a href="#filtering" id="toc-filtering" class="nav-link" data-scroll-target="#filtering"><span class="header-section-number">3.1.3</span> Filtering</a></li>
+  <li><a href="#what-is-google-earth-engine" id="toc-what-is-google-earth-engine" class="nav-link" data-scroll-target="#what-is-google-earth-engine"><span class="header-section-number">5.1.1</span> What is Google Earth Engine</a></li>
+  <li><a href="#data-formats" id="toc-data-formats" class="nav-link" data-scroll-target="#data-formats"><span class="header-section-number">5.1.2</span> Data formats</a></li>
+  <li><a href="#client-vs-server-side" id="toc-client-vs-server-side" class="nav-link" data-scroll-target="#client-vs-server-side"><span class="header-section-number">5.1.3</span> Client vs server side</a></li>
+  <li><a href="#scale" id="toc-scale" class="nav-link" data-scroll-target="#scale"><span class="header-section-number">5.1.4</span> Scale</a></li>
   </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">3.2</span> Application</a>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.2</span> Application</a>
   <ul class="collapse">
-  <li><a href="#application-of-corrections" id="toc-application-of-corrections" class="nav-link" data-scroll-target="#application-of-corrections"><span class="header-section-number">3.2.1</span> application of Corrections</a></li>
-  <li><a href="#enhancement-1" id="toc-enhancement-1" class="nav-link" data-scroll-target="#enhancement-1"><span class="header-section-number">3.2.2</span> enhancement</a></li>
+  <li><a href="#basic-guiding-of-user-interface" id="toc-basic-guiding-of-user-interface" class="nav-link" data-scroll-target="#basic-guiding-of-user-interface"><span class="header-section-number">5.2.1</span> Basic guiding of user interface</a></li>
+  <li><a href="#constructor" id="toc-constructor" class="nav-link" data-scroll-target="#constructor"><span class="header-section-number">5.2.2</span> Constructor</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions"><span class="header-section-number">5.2.3</span> Functions:</a></li>
+  <li><a href="#categories-of-geospatial-data" id="toc-categories-of-geospatial-data" class="nav-link" data-scroll-target="#categories-of-geospatial-data"><span class="header-section-number">5.2.4</span> Categories of geospatial data</a></li>
   </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a>
+  <ul class="collapse">
+  <li><a href="#new-terms" id="toc-new-terms" class="nav-link" data-scroll-target="#new-terms"><span class="header-section-number">5.3.1</span> New terms</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -177,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-chap3" class="quarto-section-identifier"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 Correction</span></span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6 GEE</span></h1>
 </div>
 
 
@@ -192,128 +198,197 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
-<p>This week we mainly talk about two main section, one is correction, another is about images enhancement. There are lots of reasons cause images become incorrect, which will bring lots of inconvenience in further analysis. All these factors will bring some obstacles for our following research. In that case, it is necessary to correct and enhance images. Although there are many methods which can improve the quality of images, different methods need to be chosen carefully for different scenarios and purposes.</p>
-<section id="corrections" class="level3" data-number="3.1.1">
-<h3 data-number="3.1.1" class="anchored" data-anchor-id="corrections"><span class="header-section-number">3.1.1</span> Corrections</h3>
-<section id="geometric-correction" class="level4" data-number="3.1.1.1">
-<h4 data-number="3.1.1.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">3.1.1.1</span> Geometric correction</h4>
-<p>Geometric correction refers to the process of correcting distortions in spatial data, particularly in images or maps, to ensure accurate representation of the Earth’s surface. The goal of geometric correction is to align the features in the data with their true geographic locations.</p>
-<p>some key points:</p>
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
+<section id="what-is-google-earth-engine" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="what-is-google-earth-engine"><span class="header-section-number">5.1.1</span> What is Google Earth Engine</h3>
+<p>A planetary-scale platform for Earth science data &amp; analysis. <a href="https://earthengine.google.com/">Google Earth Engine</a></p>
+<p>Google Earth Engine is a cloud-based platform developed by Google that allows users to analyze and visualize large geospatial datasets. It combines a vast archive of satellite imagery and other geospatial data <a href="https://developers.google.com/earth-engine/datasets/">(Google Earth Engine Data Catalog)</a> with a set of analysis capabilities powered by Google’s computational infrastructure. Developer’s document: <a href="https://developers.google.com/earth-engine/">(Google Earth Engine Documention)</a></p>
+</section>
+<section id="data-formats" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="data-formats"><span class="header-section-number">5.1.2</span> Data formats</h3>
 <ul>
-<li><p>Selection of Control Points</p>
-<p>Control points are identifiable features that have known geographic coordinates. These points are used to establish a relationship between the spatial data and the real-world coordinates.</p></li>
-<li><p>how to select ?</p>
-<p>In the spatial data, some <strong>clearly recognisable features or characteristics</strong> are selected, such as <strong>road intersections, building corners, river crossings</strong>, etc. These features should be clearly visible in the image and have a well-defined location geographically.</p></li>
-<li><p>Transformation Model</p>
-<p>-- the relationship between the control points (the spatial data) and their corresponding real-world coordinates. Common transformation models include polynomial transformations, affine transformations, or rubber sheeting.</p></li>
-<li><p>Resampling</p>
+<li>Image = raster (Has bands)</li>
+<li>Feature = vector (geometry and attributes (dictionary of properties in GEE))</li>
+</ul>
+</section>
+<section id="client-vs-server-side" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="client-vs-server-side"><span class="header-section-number">5.1.3</span> Client vs server side</h3>
+<p>GEE uses Browser/Server Architecture:</p>
 <ul>
-<li><p>Nearest Neighbor</p></li>
-<li><p>Linear</p></li>
-<li><p>Cubic</p></li>
-<li><p>Cubic spline</p></li>
+<li>In frontend – is Client side (for users)</li>
+<li>In backend – is Server side (for complex calculation)</li>
+</ul>
+</section>
+<section id="scale" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="scale"><span class="header-section-number">5.1.4</span> Scale</h3>
+<p>In GEE the scale (resolution) is set by the output not input. (Earth Engine selects the pyramid with the closest scale to that of your analysis (or specified by it) and resamples as needed)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week6/Scale.png" class="img-fluid figure-img" width="662"></p>
+<figcaption class="figure-caption">pixel resolution in GEE. Source: <a href="https://developers.google.com/earth-engine/guides/scale">scale in GEE</a></figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="application" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
+<section id="basic-guiding-of-user-interface" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="basic-guiding-of-user-interface"><span class="header-section-number">5.2.1</span> Basic guiding of user interface</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week6/user interface.png" class="img-fluid figure-img" width="652"></p>
+<figcaption class="figure-caption">User interface . Source: <a href="https://andrewmaclachlan.github.io/CASA0023-lecture-5/#31">CASA0023 week6 lecture</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="constructor" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="constructor"><span class="header-section-number">5.2.2</span> Constructor</h3>
+<ul>
+<li><p>IMG/Raster: <code>var dataset = ee.ImageCollection('LANDSAT/LC09/CO2/T1_L2');</code></p></li>
+<li><p>Vector: <code>var dataset = ee.FeatureCollection('users/andrewmaclachlan/india');</code></p></li>
+</ul>
+</section>
+<section id="functions" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="functions"><span class="header-section-number">5.2.3</span> Functions:</h3>
+<ul>
+<li><p><strong>Geometry operations (e.g.&nbsp;spatial operations)</strong></p>
+<ul>
+<li><p>Joins</p>
+<ul>
+<li><p>left/right/inner join</p></li>
+<li><p>spatial join</p></li>
+</ul></li>
+<li><p>Zonal statistics</p>
+<ul>
+<li><p>average temperature per neighbourhood/region</p></li>
+<li><p>mean/maximun value</p></li>
+</ul></li>
+<li><p>High/Low pass filtering</p>
+<ul>
+<li><p>Smoothing</p></li>
+<li><p>sharpening</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Methods</strong></p>
+<ul>
+<li><p>Machine learning and Deep learning</p></li>
+<li><p>Classification (Supervised and unsupervised)</p></li>
+<li><p>Regressions</p>
+<ul>
+<li><p>y: dependent variable</p></li>
+<li><p>x : independent variable (often <strong>time</strong>)</p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Applications/outputs</strong></p>
+<ul>
+<li><p>Online charts</p></li>
+<li><p>Scalable geospatial applications with GEE data</p></li>
+<li><p>Users interactive interface</p>
+<ul>
+<li><p>query the data</p></li>
+<li><p>Visualize the results</p></li>
+</ul></li>
 </ul></li>
 </ul>
-<p>we must re-sample the final raster because we can adjust the pixel values of the corrected image to the new pixel grid.</p>
 </section>
-<section id="atmospheric-correction" class="level4" data-number="3.1.1.2">
-<h4 data-number="3.1.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.1.2</span> Atmospheric correction</h4>
-<p>Atmospheric corrections help to remove the effects of atmospheric media (which would reduce contrast of image) on remotely sensed images in order to obtain more accurate surface reflectance or radiance values, resulting in better contrast between images acquired at different times and locations.</p>
-<p><strong>How to do?</strong></p>
-<p>Dark object subtraction (DOS): Searches each band for the darkest value then subtracts that from each pixel. (Some objects’ DN values are theoretically 0, such as deep water bodies or shadows.Therefore, any value that it has can be attributed to the atmosphere and need to be removed.</p>
-</section>
-<section id="topographic-correction" class="level4" data-number="3.1.1.3">
-<h4 data-number="3.1.1.3" class="anchored" data-anchor-id="topographic-correction"><span class="header-section-number">3.1.1.3</span> Topographic correction</h4>
-<p>Orthorectification is a geometric correction process applied to satellite or aerial imagery to remove distortions caused by terrain variations, sensor viewing angles, and Earth curvature</p>
-</section>
-<section id="radiometric-correction" class="level4" data-number="3.1.1.4">
-<h4 data-number="3.1.1.4" class="anchored" data-anchor-id="radiometric-correction"><span class="header-section-number">3.1.1.4</span> Radiometric correction</h4>
-<p><strong>convert TOA radiance to TOA reflectance</strong></p>
+<section id="categories-of-geospatial-data" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="categories-of-geospatial-data"><span class="header-section-number">5.2.4</span> Categories of geospatial data</h3>
+<p>(available in the GEE Data catalogue. <a href="https://developers.google.com/earth-engine/datasets/">(Google Earth Engine Data Catalog)</a>)</p>
+<section id="high-resolution-imagery" class="level4" data-number="5.2.4.1">
+<h4 data-number="5.2.4.1" class="anchored" data-anchor-id="high-resolution-imagery"><span class="header-section-number">5.2.4.1</span> High-Resolution imagery</h4>
 <ul>
-<li><p>Radiance is how much light the sensor sees.</p></li>
-<li><p>Reflectance is the ratio of light leaving the target to amount striking the target. Here will still have atmopsheric effects in the way of our true apparent reflectance. Confusingly all of these can be termed reflectance and indeed sometimes radiance is referred to as reflectance.</p></li>
+<li><p>Name: NAIP: National Agriculture Imagery Program</p></li>
+<li><p>Dataset Availability: 2002-06-15T00:00:00Z–2022-12-12T00:00:00</p></li>
+<li><p>Resolution: 0.6 meters</p></li>
+<li><p>Bands</p></li>
 </ul>
-<p>The purpose of radiometric correction is to standardize pixel values across an image, making it more consistent and suitable for quantitative analysis.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Units</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>R</code></td>
+<td style="text-align: left;">dn</td>
+<td style="text-align: left;">Red</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>G</code></td>
+<td style="text-align: left;">dn</td>
+<td style="text-align: left;">Green</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>B</code></td>
+<td style="text-align: left;">dn</td>
+<td style="text-align: left;">Blue</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>N</code></td>
+<td style="text-align: left;">dn</td>
+<td style="text-align: left;">Near infrared</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week6/High_resolution.png" class="img-fluid figure-img" width="674"></p>
+<figcaption class="figure-caption">NAIP. Source: <a href="https://developers.google.com/earth-engine/datasets/catalog/USDA_NAIP_DOQQ#description">NAIP in GEE</a></figcaption>
+</figure>
+</div>
 </section>
-<section id="different-level" class="level4" data-number="3.1.1.5">
-<h4 data-number="3.1.1.5" class="anchored" data-anchor-id="different-level"><span class="header-section-number">3.1.1.5</span> Different level</h4>
-<ol type="1">
-<li><p>Level 1 is delivered as a Digital Number (DN 值)</p></li>
-<li><p>Level 2 includes surface reflectance and surface temperature</p></li>
-<li><p>Level 3 science products are specific products generated from the data such as Burned Area, surface water extent</p></li>
-</ol>
-</section>
-</section>
-<section id="enhancement" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="enhancement"><span class="header-section-number">3.1.2</span> enhancement</h3>
-<section id="radio" class="level4" data-number="3.1.2.1">
-<h4 data-number="3.1.2.1" class="anchored" data-anchor-id="radio"><span class="header-section-number">3.1.2.1</span> Radio</h4>
+<section id="land-surface-diagnostics" class="level4" data-number="5.2.4.2">
+<h4 data-number="5.2.4.2" class="anchored" data-anchor-id="land-surface-diagnostics"><span class="header-section-number">5.2.4.2</span> Land Surface Diagnostics</h4>
 <ul>
-<li><p>NDVI: (NIR-RED) / (NIR+RED)</p></li>
-<li><p>NDWI: (NIR - SWIR) / (NIR + SWIR)</p>
-<p>( NIR is the reflectance in the near-infrared band; SWIR is the reflectance in the shortwave infrared band.)</p></li>
-</ul>
-</section>
-<section id="pca" class="level4" data-number="3.1.2.2">
-<h4 data-number="3.1.2.2" class="anchored" data-anchor-id="pca"><span class="header-section-number">3.1.2.2</span> PCA</h4>
-<p>Principal Component Analysis (PCA) is designed to reduce the <strong>dimensionality</strong> of our data.</p>
-<p>Running the summary will given the proportion of <strong>variance</strong> explained by each PCA component and the cumulative proportion of the variance explained (from all the PCA layers <em>compared to</em> the original input data). Overall, PCA is trying to:</p>
+<li><p>MERRA-2 M2T1NXLND: Land Surface Diagnostics V5.12.4<a href="https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_lnd_2#description">(Land Surface Data)</a></p>
 <ul>
-<li><p>Transform multi-spectral data into uncorrelated and smaller dataset</p></li>
-<li><p>Keep most of the original information</p></li>
-<li><p>The first component will (should) capture most of the variance within the dataset</p></li>
+<li><p>M2T1NXLND (or tavg1_2d_lnd_Nx) is an hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). <strong>This collection consists of land surface diagnostics, such a baseflow flux, runoff, surface soil wetness, root zone soil wetness, water at surface layer, water at root zone layer, and soil temperature</strong> at six layers. The data field is time-stamped with the central time of an hour starting from 00:30 UTC, e.g.: 00:30, 01:30, ... , 23:30 UTC.</p></li>
+<li><p>MERRA-2 is the latest version of global atmospheric reanalysis for the satellite era produced by NASA Global Modeling and Assimilation Office (GMAO) using the Goddard Earth Observing System Model (GEOS) version 5.12.4. The dataset covers the period of 1980-present with the latency of ~3 weeks after the end of a month.</p></li>
+<li><p><strong>Resolution:</strong> 69375 meters</p></li>
+</ul></li>
 </ul>
-<p><code>“A big take-away from this is that system of linear equations are equivalent to a rotation of coordinate systems, which are change of perspective”</code></p>
-<p><img src="img/week3/PCA_tran1.png" class="img-fluid" width="495"></p>
-<p>PCA chooses the new axes sequentially one after another--PCA looks at the data from all possible angles and figures out which of the infinite number of perspectives <u>spread out</u> the data the <u><strong>most</strong></u>. The first new axis is the one which the data are maximally spread out. So the first new axis would have the most information for <u>distinguishing the points from each other.</u></p>
-<p><em><code>“Loading is the correlation between an original variable and a principal component.”</code></em></p>
-<p><a href="https://grantkim94.medium.com/cracking-principal-components-analysis-pca-part-2-344bcb4264dc">Cracking Principal Components Analysis (PCA) — Part 2 | by Hyeon Gu Kim | Medium</a></p>
 </section>
-</section>
-<section id="filtering" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="filtering"><span class="header-section-number">3.1.3</span> Filtering</h3>
+<section id="climate-and-atmospheric-data" class="level4" data-number="5.2.4.3">
+<h4 data-number="5.2.4.3" class="anchored" data-anchor-id="climate-and-atmospheric-data"><span class="header-section-number">5.2.4.3</span> Climate and Atmospheric Data</h4>
+<p>Climate and atmospheric data from the European Space Agency’s Sentinel-5p satellites help <strong>monitor environmental impacts</strong> of conflicts. Some satellites measure gases like nitrogen dioxide, methane, and ozone daily, with high resolution, aiding in pinpointing local pollution sources like oil refineries or power plants.</p>
 <ul>
-<li>Filtering refers to any kind of moving window operation to our data which can be saved as a separate raster file. As we saw in the lecture this can include low or high pass filters.</li>
-</ul>
-<section id="low-pass" class="level4" data-number="3.1.3.1">
-<h4 data-number="3.1.3.1" class="anchored" data-anchor-id="low-pass"><span class="header-section-number">3.1.3.1</span> low pass</h4>
-<p>a smoothing (low-pass filter 低通滤波) algorithm will take the mean value of a 3-x-3 cell kernel, and place the output value in the location of the central cell.</p>
-</section>
-<section id="high-pass" class="level4" data-number="3.1.3.2">
-<h4 data-number="3.1.3.2" class="anchored" data-anchor-id="high-pass"><span class="header-section-number">3.1.3.2</span> high pass</h4>
-<p><strong>Edge enhancement</strong>:</p>
+<li><p>Copernicus Atmosphere Monitoring Service (CAMS) Global Near-Real-Time. <a href="https://developers.google.com/earth-engine/datasets/catalog/ECMWF_CAMS_NRT#bands">(CAMS Data)</a></p>
 <ul>
-<li><p>accentuates or highlights the boundaries and edges of objects within an image.</p></li>
-<li><p>The goal is to make the edges more visually prominent and improve the overall sharpness and clarity of the image</p></li>
+<li><p>Dataset Availability: 2016-06-22T12:00:00Z–2024-02-29T12:00:00</p></li>
+<li><p><strong>Resolution:</strong> 44528 meters</p></li>
+<li><p>The Copernicus Atmosphere Monitoring Service provides the capacity to continuously monitor the composition of the Earth’s atmosphere at global and regional scales. The main global near-real-time production system is a data assimilation and forecasting suite providing two 5-day forecasts per day for aerosols and chemical compounds that are part of the chemical scheme. Prior to 2021-07-01 only two parameters were available, 1. Total Aerosol Optical Depth at 550 nm surface 2. Particulate matter d &lt; 25 um surface Note that system:time_start refers to forecast time.</p></li>
+</ul></li>
+<li><p><a href="https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2#description">USGS Landsat 8</a> Level 2,&nbsp;Collection 2,&nbsp;Tier 1</p>
+<ul>
+<li><p>This dataset contains atmospherically corrected surface reflectance and land surface <strong>temperature</strong> derived from the data produced by the Landsat 8 OLI/TIRS sensors. These images contain 5 visible and near-infrared (VNIR) bands and 2 short-wave infrared (SWIR) bands processed to orthorectified surface reflectance, and one thermal infrared (TIR) band processed to orthorectified surface temperature. They also contain intermediate bands used in calculation of the ST products, as well as QA bands. Landsat 8 SR products are created with the Land Surface Reflectance Code (LaSRC). All Collection 2 ST products are created with a single-channel algorithm jointly created by the Rochester Institute of Technology (RIT) and National Aeronautics and Space Administration (NASA) Jet Propulsion Laboratory (JPL).</p></li>
+<li><p>Dataset Availability: 2013-03-18T15:58:14Z–2024-02-25T03:20:27</p></li>
+<li><p><strong>Resolution:</strong> 30 meters</p></li>
+<li><p>Band:</p>
+<ul>
+<li>ST_B10 : Band 10 surface temperature</li>
+</ul></li>
+</ul></li>
 </ul>
-<p>Where is edge? the <strong>change</strong> in pixel values</p>
 </section>
 </section>
 </section>
-<section id="application" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
-<section id="application-of-corrections" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="application-of-corrections"><span class="header-section-number">3.2.1</span> application of Corrections</h3>
-<p><strong>Digitising paper maps</strong> is a process of aligning paper maps with modern geographic coordinate systems so that they can be used for vectorisation and integration with other GIS datasets. This process can facilitate the effective use of historical maps, house plans, etc. in a modern GIS environment. (Geometric correction)</p>
-<p><strong>NDVI</strong> is an index of vegetation condition that is based on reflectance in the red and near-infrared bands, and therefore atmospheric influences need to be taken into account before it can be calculated. Atmospheric correction is crucial for precise quantitative analysis and vegetation monitoring. If your application requires accurate reflectance values or vegetation indices, it is advisable to conduct atmospheric correction to eliminate atmospheric effects. (Atmospheric correction)</p>
-</section>
-<section id="enhancement-1" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="enhancement-1"><span class="header-section-number">3.2.2</span> enhancement</h3>
-<section id="pca-1" class="level4" data-number="3.2.2.1">
-<h4 data-number="3.2.2.1" class="anchored" data-anchor-id="pca-1"><span class="header-section-number">3.2.2.1</span> PCA</h4>
-</section>
-<section id="smooth" class="level4" data-number="3.2.2.2">
-<h4 data-number="3.2.2.2" class="anchored" data-anchor-id="smooth"><span class="header-section-number">3.2.2.2</span> smooth</h4>
-</section>
-</section>
-</section>
-<section id="reflection" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
-<p>The week’s content was most valuable in enhancing our comprehension of various calibration techniques for remote sensing image data. It also provided an introduction to the principles of linking and enhancement. Although a significant portion of remote sensing data is pre-calibrated before acquisition, it remains crucial for us to comprehend the processing steps, as not all data undergoes this preparation. Additionally, a thorough understanding of the suitability and constraints of different methods is essential for their identification and critical evaluation in future applications.</p>
+<section id="reflection" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
+<p>This week’s lecture briefly introduce the Google Earth Engine (GEE) and its possible application aspects. In summary, GEE organizes raster data as images and collections, allowing for JavaScript-based analysis on both client and server sides. It employs loops and mapping techniques for data manipulation. GEE provides functions for loading collections, reducing images by region or neighborhood, performing regression analysis, and joining and filtering datasets, facilitating efficient geospatial analysis.</p>
+<section id="new-terms" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="new-terms"><span class="header-section-number">5.3.1</span> New terms</h3>
+<ul>
+<li><p>pyramid 金字塔</p></li>
+<li><p>resample 重采样</p></li>
+<li><p>land surface <strong>diagnostics</strong> 陆地表面<strong>诊断</strong></p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -552,13 +627,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week2 ppt – to be done</span></span>
+      <a href="./week4.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 Policy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./week4.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 Policy</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

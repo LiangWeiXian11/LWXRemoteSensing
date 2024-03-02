@@ -1,0 +1,154 @@
+# Week 6 GEE
+
+## Summary
+
+### What is Google Earth Engine
+
+A planetary-scale platform for Earth science data & analysis. [Google Earth Engine](https://earthengine.google.com/)
+
+Google Earth Engine is a cloud-based platform developed by Google that allows users to analyze and visualize large geospatial datasets. It combines a vast archive of satellite imagery and other geospatial data [(Google Earth Engine Data Catalog)](https://developers.google.com/earth-engine/datasets/) with a set of analysis capabilities powered by Google's computational infrastructure. Developer's document: [(Google Earth Engine Documention)](https://developers.google.com/earth-engine/)
+
+### Data formats
+
+-   Image = raster (Has bands)
+-   Feature = vector (geometry and attributes (dictionary of properties in GEE))
+
+### Client vs server side
+
+GEE uses Browser/Server Architecture:
+
+-   In frontend -- is Client side (for users)
+-   In backend -- is Server side (for complex calculation)
+
+### Scale
+
+In GEE the scale (resolution) is set by the output not input. (Earth Engine selects the pyramid with the closest scale to that of your analysis (or specified by it) and resamples as needed)
+
+![pixel resolution in GEE. Source: [scale in GEE](https://developers.google.com/earth-engine/guides/scale)](img/week6/Scale.png){width="662"}
+
+## Application
+
+### Basic guiding of user interface
+
+![User interface . Source: [CASA0023 week6 lecture](https://andrewmaclachlan.github.io/CASA0023-lecture-5/#31)](img/week6/user%20interface.png){width="652"}
+
+### Constructor
+
+-   IMG/Raster: `var dataset = ee.ImageCollection('LANDSAT/LC09/CO2/T1_L2');`
+
+-   Vector: `var dataset = ee.FeatureCollection('users/andrewmaclachlan/india');`
+
+### Functions:
+
+-   **Geometry operations (e.g. spatial operations)**
+
+    -   Joins
+
+        -   left/right/inner join
+
+        -   spatial join
+
+    -   Zonal statistics
+
+        -   average temperature per neighbourhood/region
+
+        -   mean/maximun value
+
+    -   High/Low pass filtering
+
+        -   Smoothing
+
+        -   sharpening
+
+-   **Methods**
+
+    -   Machine learning and Deep learning
+
+    -   Classification (Supervised and unsupervised)
+
+    -   Regressions
+
+        -   y: dependent variable
+
+        -   x : independent variable (often **time**)
+
+-   **Applications/outputs**
+
+    -   Online charts
+
+    -   Scalable geospatial applications with GEE data
+
+    -   Users interactive interface
+
+        -   query the data
+
+        -   Visualize the results
+
+### Categories of geospatial data
+
+(available in the GEE Data catalogue. [(Google Earth Engine Data Catalog)](https://developers.google.com/earth-engine/datasets/))
+
+#### High-Resolution imagery
+
+-   Name: NAIP: National Agriculture Imagery Program
+
+-   Dataset Availability: 2002-06-15T00:00:00Z--2022-12-12T00:00:00
+
+-   Resolution: 0.6 meters
+
+-   Bands
+
+| Name | Units | Description   |
+|:-----|:------|:--------------|
+| `R`  | dn    | Red           |
+| `G`  | dn    | Green         |
+| `B`  | dn    | Blue          |
+| `N`  | dn    | Near infrared |
+
+![NAIP. Source: [NAIP in GEE](https://developers.google.com/earth-engine/datasets/catalog/USDA_NAIP_DOQQ#description)](img/week6/High_resolution.png){width="674"}
+
+#### Land Surface Diagnostics
+
+-   MERRA-2 M2T1NXLND: Land Surface Diagnostics V5.12.4[(Land Surface Data)](https://developers.google.com/earth-engine/datasets/catalog/NASA_GSFC_MERRA_lnd_2#description)
+
+    -   M2T1NXLND (or tavg1_2d_lnd_Nx) is an hourly time-averaged data collection in Modern-Era Retrospective analysis for Research and Applications version 2 (MERRA-2). **This collection consists of land surface diagnostics, such a baseflow flux, runoff, surface soil wetness, root zone soil wetness, water at surface layer, water at root zone layer, and soil temperature** at six layers. The data field is time-stamped with the central time of an hour starting from 00:30 UTC, e.g.: 00:30, 01:30, \... , 23:30 UTC.
+
+    -   MERRA-2 is the latest version of global atmospheric reanalysis for the satellite era produced by NASA Global Modeling and Assimilation Office (GMAO) using the Goddard Earth Observing System Model (GEOS) version 5.12.4. The dataset covers the period of 1980-present with the latency of \~3 weeks after the end of a month.
+
+    -   **Resolution:** 69375 meters
+
+#### Climate and Atmospheric Data
+
+Climate and atmospheric data from the European Space Agency's Sentinel-5p satellites help **monitor environmental impacts** of conflicts. Some satellites measure gases like nitrogen dioxide, methane, and ozone daily, with high resolution, aiding in pinpointing local pollution sources like oil refineries or power plants.
+
+-   Copernicus Atmosphere Monitoring Service (CAMS) Global Near-Real-Time. [(CAMS Data)](https://developers.google.com/earth-engine/datasets/catalog/ECMWF_CAMS_NRT#bands)
+
+    -   Dataset Availability: 2016-06-22T12:00:00Z--2024-02-29T12:00:00
+
+    -   **Resolution:** 44528 meters
+
+    -   The Copernicus Atmosphere Monitoring Service provides the capacity to continuously monitor the composition of the Earth's atmosphere at global and regional scales. The main global near-real-time production system is a data assimilation and forecasting suite providing two 5-day forecasts per day for aerosols and chemical compounds that are part of the chemical scheme. Prior to 2021-07-01 only two parameters were available, 1. Total Aerosol Optical Depth at 550 nm surface 2. Particulate matter d \< 25 um surface Note that system:time_start refers to forecast time.
+
+-   [USGS Landsat 8](https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2#description) Level 2, Collection 2, Tier 1
+
+    -   This dataset contains atmospherically corrected surface reflectance and land surface **temperature** derived from the data produced by the Landsat 8 OLI/TIRS sensors. These images contain 5 visible and near-infrared (VNIR) bands and 2 short-wave infrared (SWIR) bands processed to orthorectified surface reflectance, and one thermal infrared (TIR) band processed to orthorectified surface temperature. They also contain intermediate bands used in calculation of the ST products, as well as QA bands. Landsat 8 SR products are created with the Land Surface Reflectance Code (LaSRC). All Collection 2 ST products are created with a single-channel algorithm jointly created by the Rochester Institute of Technology (RIT) and National Aeronautics and Space Administration (NASA) Jet Propulsion Laboratory (JPL).
+
+    -   Dataset Availability: 2013-03-18T15:58:14Z--2024-02-25T03:20:27
+
+    -   **Resolution:** 30 meters
+
+    -   Band:
+
+        -   ST_B10 : Band 10 surface temperature
+
+## Reflection
+
+This week's lecture briefly introduce the Google Earth Engine (GEE) and its possible application aspects. In summary, GEE organizes raster data as images and collections, allowing for JavaScript-based analysis on both client and server sides. It employs loops and mapping techniques for data manipulation. GEE provides functions for loading collections, reducing images by region or neighborhood, performing regression analysis, and joining and filtering datasets, facilitating efficient geospatial analysis.
+
+### New terms
+
+-   pyramid 金字塔
+
+-   resample 重采样
+
+-   land surface **diagnostics** 陆地表面**诊断**
