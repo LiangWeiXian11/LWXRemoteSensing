@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>LWXRemoteSensing - 6&nbsp; Week 7 to be done</title>
+<title>LWXRemoteSensing - 6&nbsp; Week 7 Classification</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 to be done</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week7.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 Classification</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -138,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week7.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 to be done</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -169,9 +169,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">6.2</span> Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning"><span class="header-section-number">7.1</span> Machine learning</a></li>
+  <li><a href="#classification-and-regression-trees-cart" id="toc-classification-and-regression-trees-cart" class="nav-link" data-scroll-target="#classification-and-regression-trees-cart"><span class="header-section-number">7.2</span> Classification and regression trees (CART)</a></li>
+  <li><a href="#overfitting" id="toc-overfitting" class="nav-link" data-scroll-target="#overfitting"><span class="header-section-number">7.3</span> Overfitting</a></li>
+  <li><a href="#supervised-classification-image" id="toc-supervised-classification-image" class="nav-link" data-scroll-target="#supervised-classification-image"><span class="header-section-number">7.4</span> <strong>supervised</strong> classification <strong>(</strong>Image)</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">8</span> Application</a>
+  <ul class="collapse">
+  <li><a href="#random-forest-model-for-crop-type-and-land-classification" id="toc-random-forest-model-for-crop-type-and-land-classification" class="nav-link" data-scroll-target="#random-forest-model-for-crop-type-and-land-classification"><span class="header-section-number">8.1</span> Random Forest Model for Crop Type and Land Classification</a></li>
+  </ul></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9</span> Reflection</a>
+  <ul class="collapse">
+  <li><a href="#new-terms" id="toc-new-terms" class="nav-link" data-scroll-target="#new-terms"><span class="header-section-number">9.0.1</span> New terms:</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -180,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 to be done</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 Classification</span></h1>
 </div>
 
 
@@ -195,16 +207,150 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
+<section id="summary" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Summary</h1>
+<section id="machine-learning" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="machine-learning"><span class="header-section-number">7.1</span> Machine learning</h2>
+<p>Machine learning: science of computer modeling of learning process.</p>
+<p>Machine learning is a search through all the data explain the input data can be used on new input data.</p>
+<p>Expert systems:</p>
+<ol type="1">
+<li><p>A system that uses human knowledge to solve problems that normally require human intelligence.</p></li>
+<li><p>Knowledge from expert (experience)</p></li>
+</ol>
+<p>When humans have some generalizations, we can reach a logical assumption or conclusion = <strong>inductive learning</strong></p>
 </section>
-<section id="application" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<section id="classification-and-regression-trees-cart" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="classification-and-regression-trees-cart"><span class="header-section-number">7.2</span> Classification and regression trees (CART)</h2>
+<p><strong>Decision trees</strong> are hierarchical classifiers used for both <u>classification and regression</u> tasks.</p>
+<ol type="1">
+<li><p>Classification trees</p>
+<ol type="1">
+<li><p>classify data into two or more discrete (can only have certain values) categories</p></li>
+<li><p>A decision tree can easily be transformed to a set of rules by mapping from the root node to the leaf nodes one by one.</p>
+<img src="img/week7/classificationTree.png" class="img-fluid" width="662" alt="Rule of Decision Tree. Source: Decision Tree"></li>
+<li><p>Regression trees</p>
+<ol type="1">
+<li><p>predict continuous dependent variable</p></li>
+<li><p>subset the data into <u>smaller chunks</u></p></li>
+</ol>
+<p>Case 1; one line doesn’t fit the whole dataset:</p>
+<img src="img/week7/RegressionC1.png" class="img-fluid" width="566" alt="Case 1A. Source: Andrew drew it in Lecture 7">
+<img src="img/week7/RegressionC1B.png" class="img-fluid" width="572" alt="Case 1B. Source: How do Regression Trees Work?">
+<p>Case 2; regression tree; divide to different subset then doing regression on each individual component.</p>
+<img src="img/week7/RegressionC2.png" class="img-fluid" width="485" alt="Case 2. Source: How do Regression Trees Work?">
+<p>So in this case, the tree uses the average value (100%) as the prediction value for dosages between 14.5 and 23.5.</p></li>
+</ol></li>
+</ol>
 </section>
-<section id="reflection" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
+<section id="overfitting" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="overfitting"><span class="header-section-number">7.3</span> Overfitting</h2>
+<ul>
+<li><p>bias</p>
+<ul>
+<li><p>difference between predicted value and true value</p></li>
+<li><p>oversimplifies model</p></li>
+</ul></li>
+<li><p>variance</p>
+<ul>
+<li><p>variability of model for a given point</p></li>
+<li><p>(means does not genearlise well (the model is too good! ))</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="supervised-classification-image" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="supervised-classification-image"><span class="header-section-number">7.4</span> <strong>supervised</strong> classification <strong>(</strong>Image)</h2>
+<p>Main processes:</p>
+<ol type="1">
+<li>Class definition
+<ul>
+<li>Define the classes or categories into which you want to classify the data. These classes should be mutually exclusive and collectively exhaustive.</li>
+<li>Assign labels or class identifiers to the examples in your training dataset.</li>
+</ul></li>
+<li>Pre-processing
+<ul>
+<li>Clean the data by handling missing values, outliers, or noise. - Normalize or standardize the features to ensure that they have a similar scale.</li>
+<li>Split the data into (training and testing sets)</li>
+</ul></li>
+<li>Training
+<ul>
+<li>Select a suitable classification algorithm</li>
+<li>Train the model using the labeled examples from the training dataset (the model learns to map input features to the corresponding class labels)</li>
+</ul></li>
+<li>Pixel assignment
+<ul>
+<li>pixel assignment involves assigning each pixel in the image to a specific class label based on the trained model’s predictions</li>
+</ul></li>
+<li>accuracy assessment
+<ul>
+<li>Evaluate the accuracy of the classification model</li>
+<li>Compare the model’s predictions with the true labels from the test dataset to assess its performance</li>
+<li>Adjust the model’s parameters or features</li>
+</ul></li>
+</ol>
+<p>Common methods:</p>
+<ul>
+<li><p>Maximum likelihood</p></li>
+<li><p>SVM (support vector Machine)</p>
+<ul>
+<li><p>Support Vector Machine (SVM) is a supervised learning classification algorithm. which is to find <u>a middle margin (an optimal separating hyperplane)</u> that separates vertors of different classes while <u>maximizing the margin</u> of separation.</p></li>
+<li><p>(Basically) a linear binary classifier</p></li>
+<li><p>Maximum <strong>margin</strong> between two classes of training data = <strong>maximum margin classifier</strong></p>
+<ul>
+<li>it finds the divide in the data and places a line at the division from the closest points</li>
+</ul></li>
+<li><p><strong>support vectors</strong> mean Points on the boundaries (and within) are</p></li>
+<li><p><strong>separating hyperplane</strong> = Middle margin</p></li>
+<li><p>some misclassifications may happen and cause <strong>misclassified instances</strong></p></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="application" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Application</h1>
+<section id="random-forest-model-for-crop-type-and-land-classification" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="random-forest-model-for-crop-type-and-land-classification"><span class="header-section-number">8.1</span> Random Forest Model for Crop Type and Land Classification</h2>
+<ol type="1">
+<li>Preparing Label data</li>
+<li>Inputing Imagery</li>
+<li>Training model
+<ol type="1">
+<li>Dividing Trainning and testing data set
+<ol type="1">
+<li>split 20% of the data to reserve for testing the quality of the trained model</li>
+</ol></li>
+<li>listing Main types of objects
+<ol type="1">
+<li>array([buildings,‘Forestland’, ‘Grassland’,‘Maize’,‘Shadow’, ‘Sugarcane’, ‘Sunflower’, ‘Waterbody’], dtype=object)</li>
+</ol></li>
+<li>Some index may help trainning model
+<ol type="1">
+<li>Ndvi</li>
+<li>Ndwi</li>
+</ol></li>
+</ol></li>
+<li>Evaluate the model
+<ol type="1">
+<li>A confusion matrix</li>
+</ol></li>
+<li>Mapping the result</li>
+</ol>
+</section>
+</section>
+<section id="reflection" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Reflection</h1>
+<p>In this week, we learn some Classification methods that slice data differently, aiming to categorize data into classes or values. It also covers some algorithms of <strong>supervised</strong> classification for image such as SVM.</p>
+<p>In more detail, the decision between a single decision tree or a forest of trees depends on the desired model complexity and robustness. Hyperparameters govern the behavior of the classifier, influencing its performance and generalization ability.</p>
+<section id="new-terms" class="level3" data-number="9.0.1">
+<h3 data-number="9.0.1" class="anchored" data-anchor-id="new-terms"><span class="header-section-number">9.0.1</span> New terms:</h3>
+<ul>
+<li><p>inductive learning = given context we can use experience to make judgement</p></li>
+<li><p>maximum margin classifier 最大间隔分类器</p></li>
+<li><p>separating hyperplane 分割超平面</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

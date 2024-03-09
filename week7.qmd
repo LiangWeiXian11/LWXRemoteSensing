@@ -1,7 +1,133 @@
-# Week 7 to be done
+# Week 7 Classification
 
-## Summary
+# Summary
 
-## Application
+## Machine learning
 
-## Reflection
+Machine learning: science of computer modeling of learning process.
+
+Machine learning is a search through all the data explain the input data can be used on new input data.
+
+Expert systems:
+
+1.  A system that uses human knowledge to solve problems that normally require human intelligence.
+
+2.  Knowledge from expert (experience)
+
+When humans have some generalizations, we can reach a logical assumption or conclusion = **inductive learning**
+
+## Classification and regression trees (CART)
+
+**Decision trees** are hierarchical classifiers used for both [classification and regression]{.underline} tasks.
+
+1.  Classification trees
+
+    1.  classify data into two or more discrete (can only have certain values) categories
+
+    2.  A decision tree can easily be transformed to a set of rules by mapping from the root node to the leaf nodes one by one.
+
+        ![Rule of Decision Tree. Source: [Decision Tree](https://www.saedsayad.com/decision_tree.htm)](img/week7/classificationTree.png){width="662"}
+
+    3.  Regression trees
+
+        1.  predict continuous dependent variable
+
+        2.  subset the data into [smaller chunks]{.underline}
+
+        Case 1; one line doesn't fit the whole dataset:
+
+        ![Case 1A. Source: Andrew drew it in Lecture 7](img/week7/RegressionC1.png){width="566"}
+
+        ![Case 1B. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC1B.png){width="572"}
+
+        Case 2; regression tree; divide to different subset then doing regression on each individual component.
+
+        ![Case 2. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC2.png){width="485"}
+
+        So in this case, the tree uses the average value (100%) as the prediction value for dosages between 14.5 and 23.5.
+
+## Overfitting
+
+-   bias
+
+    -   difference between predicted value and true value
+
+    -   oversimplifies model
+
+-   variance
+
+    -   variability of model for a given point
+
+    -   (means does not genearlise well (the model is too good! ))
+
+## **supervised** classification **(**Image)
+
+Main processes:
+
+1.  Class definition
+    -   Define the classes or categories into which you want to classify the data. These classes should be mutually exclusive and collectively exhaustive.
+    -   Assign labels or class identifiers to the examples in your training dataset.
+2.  Pre-processing
+    -   Clean the data by handling missing values, outliers, or noise. - Normalize or standardize the features to ensure that they have a similar scale.
+    -   Split the data into (training and testing sets)
+3.  Training
+    -   Select a suitable classification algorithm
+    -   Train the model using the labeled examples from the training dataset (the model learns to map input features to the corresponding class labels)
+4.  Pixel assignment
+    -   pixel assignment involves assigning each pixel in the image to a specific class label based on the trained model's predictions
+5.  accuracy assessment
+    -   Evaluate the accuracy of the classification model
+    -   Compare the model's predictions with the true labels from the test dataset to assess its performance
+    -   Adjust the model's parameters or features
+
+Common methods:
+
+-   Maximum likelihood
+
+-   SVM (support vector Machine)
+
+    -   Support Vector Machine (SVM) is a supervised learning classification algorithm. which is to find [a middle margin (an optimal separating hyperplane)]{.underline} that separates vertors of different classes while [maximizing the margin]{.underline} of separation.
+
+    -   (Basically) a linear binary classifier
+
+    -   Maximum **margin** between two classes of training data = **maximum margin classifier**
+
+        -   it finds the divide in the data and places a line at the division from the closest points
+
+    -   **support vectors** mean Points on the boundaries (and within) are
+
+    -   **separating hyperplane** = Middle margin
+
+    -   some misclassifications may happen and cause **misclassified instances**
+
+# Application
+
+## Random Forest Model for Crop Type and Land Classification
+
+1.  Preparing Label data
+2.  Inputing Imagery
+3.  Training model
+    1.  Dividing Trainning and testing data set
+        1.  split 20% of the data to reserve for testing the quality of the trained model
+    2.  listing Main types of objects
+        1.  array(\[buildings,'Forestland', 'Grassland','Maize','Shadow', 'Sugarcane', 'Sunflower', 'Waterbody'\], dtype=object)
+    3.  Some index may help trainning model
+        1.  Ndvi
+        2.  Ndwi
+4.  Evaluate the model
+    1.  A confusion matrix
+5.  Mapping the result
+
+# Reflection
+
+In this week, we learn some Classification methods that slice data differently, aiming to categorize data into classes or values. It also covers some algorithms of **supervised** classification for image such as SVM.
+
+In more detail, the decision between a single decision tree or a forest of trees depends on the desired model complexity and robustness. Hyperparameters govern the behavior of the classifier, influencing its performance and generalization ability.
+
+### New terms:
+
+-   inductive learning = given context we can use experience to make judgement
+
+-   maximum margin classifier 最大间隔分类器
+
+-   separating hyperplane 分割超平面
