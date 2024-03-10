@@ -1,8 +1,8 @@
 # Week 7 Classification
 
-# Summary
+## Summary
 
-## Machine learning
+### Machine learning
 
 Machine learning: science of computer modeling of learning process.
 
@@ -16,7 +16,7 @@ Expert systems:
 
 When humans have some generalizations, we can reach a logical assumption or conclusion = **inductive learning**
 
-## Classification and regression trees (CART)
+### Classification and regression trees (CART)
 
 **Decision trees** are hierarchical classifiers used for both [classification and regression]{.underline} tasks.
 
@@ -26,7 +26,7 @@ When humans have some generalizations, we can reach a logical assumption or conc
 
     2.  A decision tree can easily be transformed to a set of rules by mapping from the root node to the leaf nodes one by one.
 
-        ![Rule of Decision Tree. Source: [Decision Tree](https://www.saedsayad.com/decision_tree.htm)](img/week7/classificationTree.png){width="662"}
+![Rule of Decision Tree. Source: [Decision Tree](https://www.saedsayad.com/decision_tree.htm)](img/week7/classificationTree.png){width="662"}
 
     3.  Regression trees
 
@@ -36,17 +36,17 @@ When humans have some generalizations, we can reach a logical assumption or conc
 
         Case 1; one line doesn't fit the whole dataset:
 
-        ![Case 1A. Source: Andrew drew it in Lecture 7](img/week7/RegressionC1.png){width="566"}
+![Case 1A. Source: Andrew drew it in Lecture 7](img/week7/RegressionC1.png){width="566"}
 
-        ![Case 1B. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC1B.png){width="572"}
+![Case 1B. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC1B.png){width="572"}
 
         Case 2; regression tree; divide to different subset then doing regression on each individual component.
 
-        ![Case 2. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC2.png){width="485"}
+![Case 2. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC2.png){width="485"}
 
         So in this case, the tree uses the average value (100%) as the prediction value for dosages between 14.5 and 23.5.
 
-## Overfitting
+### Overfitting
 
 -   bias
 
@@ -60,7 +60,7 @@ When humans have some generalizations, we can reach a logical assumption or conc
 
     -   (means does not genearlise well (the model is too good! ))
 
-## **supervised** classification **(**Image)
+### **supervised** classification **(**Image)
 
 Main processes:
 
@@ -100,9 +100,9 @@ Common methods:
 
     -   some misclassifications may happen and cause **misclassified instances**
 
-# Application
+## Application
 
-## Random Forest Model for Crop Type and Land Classification
+### Random Forest Model for Crop Type and Land Classification
 
 1.  Preparing Label data
 2.  Inputing Imagery
@@ -118,7 +118,7 @@ Common methods:
     1.  A confusion matrix
 5.  Mapping the result
 
-# Reflection
+## Reflection
 
 In this week, we learn some Classification methods that slice data differently, aiming to categorize data into classes or values. It also covers some algorithms of **supervised** classification for image such as SVM.
 
