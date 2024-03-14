@@ -26,25 +26,31 @@ When humans have some generalizations, we can reach a logical assumption or conc
 
     2.  A decision tree can easily be transformed to a set of rules by mapping from the root node to the leaf nodes one by one.
 
-![Rule of Decision Tree. Source: [Decision Tree](https://www.saedsayad.com/decision_tree.htm)](img/week7/classificationTree.png){width="662"}
+![Rule of Decision Tree. Source: [Decision Tree.](https://www.saedsayad.com/decision_tree.htm)](img/week7/classificationTree.png){width="662"}
 
-    3.  Regression trees
+```         
+3.  Regression trees
 
-        1.  predict continuous dependent variable
+    1.  predict continuous dependent variable
 
-        2.  subset the data into [smaller chunks]{.underline}
+    2.  subset the data into [smaller chunks]{.underline}
 
-        Case 1; one line doesn't fit the whole dataset:
+    Case 1; one line doesn't fit the whole dataset:
+```
 
 ![Case 1A. Source: Andrew drew it in Lecture 7](img/week7/RegressionC1.png){width="566"}
 
 ![Case 1B. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC1B.png){width="572"}
 
-        Case 2; regression tree; divide to different subset then doing regression on each individual component.
+```         
+    Case 2; regression tree; divide to different subset then doing regression on each individual component.
+```
 
 ![Case 2. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC2.png){width="485"}
 
-        So in this case, the tree uses the average value (100%) as the prediction value for dosages between 14.5 and 23.5.
+```         
+    So in this case, the tree uses the average value (100%) as the prediction value for dosages between 14.5 and 23.5.
+```
 
 ### Overfitting
 
@@ -59,6 +65,8 @@ When humans have some generalizations, we can reach a logical assumption or conc
     -   variability of model for a given point
 
     -   (means does not genearlise well (the model is too good! ))
+
+![best model. Source: [Bellini and Cascella, 2022.](https://www.researchgate.net/publication/364826401_Understanding_basic_principles_of_Artificial_Intelligence_a_practical_guide_for_intensivists)](img/week7/overfitting.png){width="662"}
 
 ### **supervised** classification **(**Image)
 
@@ -100,13 +108,24 @@ Common methods:
 
     -   some misclassifications may happen and cause **misclassified instances**
 
+![SVM. Source: CASA 23 in Lecture 7](img/week7/SVM.png){width="566"}
+
 ## Application
 
 ### Random Forest Model for Crop Type and Land Classification
 
-1.  Preparing Label data
-2.  Inputing Imagery
-3.  Training model
+Overall Machine Learning Workflow:\
+
+1.  Pre-Processing
+
+2.  
+
+3.  Preparing Label data
+
+4.  Inputing Imagery
+
+5.  Training model
+
     1.  Dividing Trainning and testing data set
         1.  split 20% of the data to reserve for testing the quality of the trained model
     2.  listing Main types of objects
@@ -114,9 +133,12 @@ Common methods:
     3.  Some index may help trainning model
         1.  Ndvi
         2.  Ndwi
-4.  Evaluate the model
+
+6.  Evaluate the model
+
     1.  A confusion matrix
-5.  Mapping the result
+
+7.  Mapping the result
 
 ## Reflection
 

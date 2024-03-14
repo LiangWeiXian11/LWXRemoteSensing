@@ -1,6 +1,107 @@
-# Week 8 to be done
+# Week 8
 
 ## Summary
+
+### Object based image analysis
+
+Object-based image analysis (OBIA) is a method used in remote sensing and digital image processing for extracting information from satellite or aerial imagery. OBIA groups pixels into meaningful objects or segments based on their characteristics such as spectral, spatial, and contextual properties.
+
+Main processes:
+
+1.  Image Segmentation
+
+    **Segment** the preprocessed image into homogeneous regions or **objects** based on similarities in spectral, spatial, and/or textural characteristics.
+
+2.  Feature Extraction
+
+    A set of descriptive **features** are extracted for each object.
+
+3.  Classification
+
+    Objects are classified into different **classes or categories** using features.
+
+### Sub pixel analysis
+
+Spectral Mixture Analysis (SMA), Linear spectral unmixing
+
+Sub-pixel analysis refers to a technique used in remote sensing and image processing to analyze and extract information at a spatial resolution finer than that of individual pixels, especially when:
+
+1.  objects of interest are smaller than the size of a pixel
+
+2.  capturing spatial details beyond the native resolution of the sensor
+
+**V-I-S model**:
+
+The **V-I-S model** in urban areas: Vegetation-Impervious surface-Soil (V-I-S) fractions
+
+![(V-I-S) fractions. Source: [Phinn et al. (2002) Monitoring the composition of urban environments based on the vegetation-impervious surface-soil (VIS) model by subpixel analysis techniques.](https://ieeexplore.ieee.org/document/1046852/;jsessionid=ol45CZR4LEQ1zGBqqCBFuv8ldkpuuLYekP5Gkk7i4BIn-45LQ7ax!993648324)](img/week8/sub-pixel.png){width="662"}
+
+### Accuracy assessment
+
+**Confusion matrix**
+
+![Confusion matrix. Source: [Confusion matrix chart](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)](img/week8/Overall_ConfusionM1.png){width="662"}
+
+In more detail, there are three main terms:
+
+1.  **Accuracy**
+
+-   Total classified correction
+
+2.  **Precision**
+
+-   In all the positive prediction, how many are **truly positive**?
+-   Precision focuses on the proportion of positive predictions that are correct, emphasizing the system's ability to avoid false positives.
+
+3.  **Recall**
+
+-   In all the true positive instances, how many were **correctly identified**?"
+-   Recall focuses on the proportion of actual positive instances that are correctly identified by the system, emphasizing the system's ability to avoid false negatives.
+
+4.  **the F1-score**
+
+-   which is the harmonic mean of precision and recall, is often used to provide a single measure that balances both metrics.
+-   A balance between precision and recall, takes beta attribute which weights precision or recall (usually beta = 1).
+
+![Detailed Confusion matrix. Source: [Detail Confusion matrix](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)](img/week8/DetailedConfusionM.png){width="662"}
+
+These two metrics are often inversely related; improving one may lead to a decrease in the other. Therefore, it is basically a trade-off: We can't have both a high producer accuracy (**recall**) **and** a high user's accuracy (**precision**).
+
+The main point is: we want to **maximise** true positives and **minimise** false positives.
+
+### Cross validation
+
+Cross-validation can estimate how the model will generalize to an independent dataset. When limited data is used for model training, cross-validation can provide higher sufficient use of data for model training.
+
+**spatial autocorrelation:**
+
+Problem: **spatial autocorrelation** between training and test sets, it may cause **overfitting.**
+
+When the training data close to the testing data, the Spatial autocorrelation may happen between training and test sets.
+
+In more specific, when it comes to the Spatial autocorrelation, the Waldo Tobler's first Law of Geography can be mentioned...
+
+**"Everything is related to everything else, but near things are more related than distant things."**
+
+![First Law of Geography. Source: [Spatial is Special](https://www.e-education.psu.edu/maps/l2_p2.html)](img/week8/FirstLaw.png){width="542"}
+
+In more detail:
+
+-   In vector data, objects may accumulate in the center and have similar characteristics or attributes.
+
+-   In remote sensing data, two points may share the same pixel, that means those two points have same value.
+
+**Overfitting:**
+
+Result: the model will have better accuracy that it actually does---thel model is not generalisable.
+
+**Spatial Cross validation:**
+
+Geographic data is special. That means points are not statistically independent because training and test points in conventional CV are often too close to each other (see first row of Figure 12.3). 'Training' observations near the 'test' observations can provide a kind of 'sneak preview': information that should be unavailable to the training dataset. To alleviate this problem 'spatial partitioning' is used to split the observations into spatially disjointed subsets. This partitioning strategy is the only difference between spatial and conventional CV. As a result, spatial CV leads to a bias-reduced assessment of a model's predictive performance, and hence helps to avoid overfitting.
+
+Spatially partition the folded data, folds are from cross validation.
+
+![Cross Validation. Source: [Statistical learning](https://r.geocompx.org/spatial-cv.html#intro-cv)](img/week8/CrossValidation.png){width="594"}
 
 ## Application
 
