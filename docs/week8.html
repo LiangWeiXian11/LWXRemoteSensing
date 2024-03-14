@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>LWXRemoteSensing - 7&nbsp; Week 8 to be done</title>
+<title>LWXRemoteSensing - 7&nbsp; Week 8 Classification 2</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week8.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8 to be done</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week8.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8 Classification 2</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -138,13 +138,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 to be done</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week8.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8 to be done</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8 Classification 2</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -169,7 +169,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#object-based-image-analysis" id="toc-object-based-image-analysis" class="nav-link" data-scroll-target="#object-based-image-analysis"><span class="header-section-number">7.1.1</span> Object based image analysis</a></li>
+  <li><a href="#sub-pixel-analysis" id="toc-sub-pixel-analysis" class="nav-link" data-scroll-target="#sub-pixel-analysis"><span class="header-section-number">7.1.2</span> Sub pixel analysis</a></li>
+  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment"><span class="header-section-number">7.1.3</span> Accuracy assessment</a></li>
+  <li><a href="#cross-validation" id="toc-cross-validation" class="nav-link" data-scroll-target="#cross-validation"><span class="header-section-number">7.1.4</span> Cross validation</a></li>
+  </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
   </ul>
@@ -180,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8 to be done</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8 Classification 2</span></h1>
 </div>
 
 
@@ -197,6 +203,113 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<section id="object-based-image-analysis" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="object-based-image-analysis"><span class="header-section-number">7.1.1</span> Object based image analysis</h3>
+<p>Object-based image analysis (OBIA) is a method used in remote sensing and digital image processing for extracting information from satellite or aerial imagery. OBIA groups pixels into meaningful objects or segments based on their characteristics such as spectral, spatial, and contextual properties.</p>
+<p>Main processes:</p>
+<ol type="1">
+<li><p>Image Segmentation</p>
+<p><strong>Segment</strong> the preprocessed image into homogeneous regions or <strong>objects</strong> based on similarities in spectral, spatial, and/or textural characteristics.</p></li>
+<li><p>Feature Extraction</p>
+<p>A set of descriptive <strong>features</strong> are extracted for each object.</p></li>
+<li><p>Classification</p>
+<p>Objects are classified into different <strong>classes or categories</strong> using features.</p></li>
+</ol>
+</section>
+<section id="sub-pixel-analysis" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="sub-pixel-analysis"><span class="header-section-number">7.1.2</span> Sub pixel analysis</h3>
+<p>Spectral Mixture Analysis (SMA), Linear spectral unmixing</p>
+<p>Sub-pixel analysis refers to a technique used in remote sensing and image processing to analyze and extract information at a spatial resolution finer than that of individual pixels, especially when:</p>
+<ol type="1">
+<li><p>objects of interest are smaller than the size of a pixel</p></li>
+<li><p>capturing spatial details beyond the native resolution of the sensor</p></li>
+</ol>
+<p><strong>V-I-S model</strong>:</p>
+<p>The&nbsp;<strong>V-I-S model</strong>&nbsp;in urban areas: Vegetation-Impervious surface-Soil (V-I-S) fractions</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week8/sub-pixel.png" class="img-fluid figure-img" width="662"></p>
+<figcaption class="figure-caption">(V-I-S) fractions. Source: <a href="https://ieeexplore.ieee.org/document/1046852/;jsessionid=ol45CZR4LEQ1zGBqqCBFuv8ldkpuuLYekP5Gkk7i4BIn-45LQ7ax!993648324">Phinn et al.&nbsp;(2002) Monitoring the composition of urban environments based on the vegetation-impervious surface-soil (VIS) model by subpixel analysis techniques.</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="accuracy-assessment" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">7.1.3</span> Accuracy assessment</h3>
+<p><strong>Confusion matrix</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week8/Overall_ConfusionM1.png" class="img-fluid figure-img" width="662"></p>
+<figcaption class="figure-caption">Confusion matrix. Source: <a href="https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9">Confusion matrix chart</a></figcaption>
+</figure>
+</div>
+<p>In more detail, there are three main terms:</p>
+<ol type="1">
+<li><strong>Accuracy</strong></li>
+</ol>
+<ul>
+<li>Total classified correction</li>
+</ul>
+<ol start="2" type="1">
+<li><strong>Precision</strong></li>
+</ol>
+<ul>
+<li>In all the positive prediction, how many are <strong>truly positive</strong>?</li>
+<li>Precision focuses on the proportion of positive predictions that are correct, emphasizing the system’s ability to avoid false positives.</li>
+</ul>
+<ol start="3" type="1">
+<li><strong>Recall</strong></li>
+</ol>
+<ul>
+<li>In all the true positive instances, how many were <strong>correctly identified</strong>?”</li>
+<li>Recall focuses on the proportion of actual positive instances that are correctly identified by the system, emphasizing the system’s ability to avoid false negatives.</li>
+</ul>
+<ol start="4" type="1">
+<li><strong>the F1-score</strong></li>
+</ol>
+<ul>
+<li>which is the harmonic mean of precision and recall, is often used to provide a single measure that balances both metrics.</li>
+<li>A balance between precision and recall, takes beta attribute which weights precision or recall (usually beta = 1).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week8/DetailedConfusionM.png" class="img-fluid figure-img" width="662"></p>
+<figcaption class="figure-caption">Detailed Confusion matrix. Source: <a href="https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9">Detail Confusion matrix</a></figcaption>
+</figure>
+</div>
+<p>These two metrics are often inversely related; improving one may lead to a decrease in the other. Therefore, it is basically a trade-off: We can’t have both a high producer accuracy (<strong>recall</strong>) <strong>and</strong> a high user’s accuracy (<strong>precision</strong>).</p>
+<p>The main point is: we want to <strong>maximise</strong> true positives and <strong>minimise</strong> false positives.</p>
+</section>
+<section id="cross-validation" class="level3" data-number="7.1.4">
+<h3 data-number="7.1.4" class="anchored" data-anchor-id="cross-validation"><span class="header-section-number">7.1.4</span> Cross validation</h3>
+<p>Cross-validation can estimate how the model will generalize to an independent dataset. When limited data is used for model training, cross-validation can provide higher sufficient use of data for model training.</p>
+<p><strong>spatial autocorrelation:</strong></p>
+<p>Problem: <strong>spatial autocorrelation</strong> between training and test sets, it may cause <strong>overfitting.</strong></p>
+<p>When the training data close to the testing data, the Spatial autocorrelation may happen between training and test sets.</p>
+<p>In more specific, when it comes to the Spatial autocorrelation, the Waldo Tobler’s first Law of Geography can be mentioned…</p>
+<p><strong>“Everything is related to everything else, but near things are more related than distant things.”</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week8/FirstLaw.png" class="img-fluid figure-img" width="542"></p>
+<figcaption class="figure-caption">First Law of Geography. Source: <a href="https://www.e-education.psu.edu/maps/l2_p2.html">Spatial is Special</a></figcaption>
+</figure>
+</div>
+<p>In more detail:</p>
+<ul>
+<li><p>In vector data, objects may accumulate in the center and have similar characteristics or attributes.</p></li>
+<li><p>In remote sensing data, two points may share the same pixel, that means those two points have same value.</p></li>
+</ul>
+<p><strong>Overfitting:</strong></p>
+<p>Result: the model will have better accuracy that it actually does—thel model is not generalisable.</p>
+<p><strong>Spatial Cross validation:</strong></p>
+<p>Geographic data is special. That means points are not statistically independent because training and test points in conventional CV are often too close to each other (see first row of Figure 12.3). ‘Training’ observations near the ‘test’ observations can provide a kind of ‘sneak preview’: information that should be unavailable to the training dataset. To alleviate this problem ‘spatial partitioning’ is used to split the observations into spatially disjointed subsets. This partitioning strategy is the only difference between spatial and conventional CV. As a result, spatial CV leads to a bias-reduced assessment of a model’s predictive performance, and hence helps to avoid overfitting.</p>
+<p>Spatially partition the folded data, folds are from cross validation.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/week8/CrossValidation.png" class="img-fluid figure-img" width="594"></p>
+<figcaption class="figure-caption">Cross Validation. Source: <a href="https://r.geocompx.org/spatial-cv.html#intro-cv">Statistical learning</a></figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
@@ -444,7 +557,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week7.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 to be done</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 Classification</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
