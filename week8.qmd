@@ -1,4 +1,4 @@
-# Week 8 Classification 2
+# Week 8 Advanced Classification
 
 ## Summary
 
@@ -105,4 +105,39 @@ Spatially partition the folded data, folds are from cross validation.
 
 ## Application
 
+Last week, we have mentioned the overall workflow of crop classification. In this week, we will apply it to a real-work issue (crop type classification).
+
+Asli Ozdarici Ok (2012) indicated that the overall accuracies of the parcel-based approach computed for **the Random Forest method** is 85.89%, which is about 8% better than the corresponding result of Maximum Likelihood Classification (MLC).
+
+Therefore, in this case, I will use t**he Random Forest** to classify crop types. I will use a python notebook as a starter, which is available on the [developmentseed](https://developmentseed.org/sat-ml-training/), and put the link at the bottom. In general, I will summarize the processes and highlight the vital part.
+
+### Random Forest Model for Crop Type and Land Classification
+
+1.  Preparing Label data
+    1.  Draw the polygon (lines or points) by satellite imagery.
+    2.  Or input already prepared training dataset including each landuse class.
+2.  Inputing Imagery from GEE
+3.  Training model
+    1.  Dividing Trainning and testing data set
+
+        1.  split 20% of the data to reserve for testing the quality of the trained model.
+
+    2.  Main types of objects
+
+        1.  array(\[buildings,'Forestland', 'Grassland','Maize','Shadow', 'Sugarcane', 'Sunflower', 'Waterbody'\], dtype=object)
+        2.  Some index may help trainning model such as NDVI and NDWI
+
+    3.  Create a Random Forest Classifier object
+
+        `clf = RandomForestClassifier( n_estimators=200, class_weight=class_weight_dict, max_depth=6, n_jobs=-1, verbose=1, random_state=0)`
+4.  Evaluate the model
+    1.  We can use the confusion matrix.
+    2.  **A confusion matrix** shows a comparision between what the class is based on the test data, and what the model predicted it to be.
+5.  Mapping the result
+    1.  we can use the trained **RandomForestClassifier** over a whole satellite image that covers a larger geospatial location.
+
+[the Satellite Machine Learning Training guide](https://developmentseed.org/sat-ml-training/Randomforest_cropmapping-with_GEE#Reading-imagery-from-Google-Earth-Engine-(GEE))
+
 ## Reflection
+
+This week, we focused on improving EO data processing and evaluating classification model accuracy. We discussed the importance of selecting suitable datasets, using techniques like cross-validation, and assessing accuracy with methods such as error matrices and Kappa statistics. We also considered spatial autocorrelation and explored strategies like object-based image analysis and spatial cross-validation to address it. Finally, I read a paper evaluating the performance of server models and used a Python notebook on DevelopmentSeed that used random forests for crop type classification.

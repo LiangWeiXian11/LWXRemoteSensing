@@ -112,33 +112,21 @@ Common methods:
 
 ## Application
 
-### Random Forest Model for Crop Type and Land Classification
-
-Overall Machine Learning Workflow:\
+### Overall Machine Learning Workflow for Classification (Random Forest Model):
 
 1.  Pre-Processing
+    1.  pre-process satellite imagery
+    2.  some index for classification such as NDVI, NDWI (those types of landcover are so readily identifiable that we can remove them with thresholds. In this case, we can use these indices to filter out water and vegetation.)
+2.  Generating Labeled Data
+    1.  Define different land cover classes
+    2.  Draw polygons (or points or lines) around the landcover.
+    3.  Taking random samples of points from within these polygons
+3.  Training a Model by above labeled data.
+    1.  **Random Forest classifier**
+4.  Validation the model
+    1.  Confusion Matrix (Error matrix)
 
-2.  
-
-3.  Preparing Label data
-
-4.  Inputing Imagery
-
-5.  Training model
-
-    1.  Dividing Trainning and testing data set
-        1.  split 20% of the data to reserve for testing the quality of the trained model
-    2.  listing Main types of objects
-        1.  array(\[buildings,'Forestland', 'Grassland','Maize','Shadow', 'Sugarcane', 'Sunflower', 'Waterbody'\], dtype=object)
-    3.  Some index may help trainning model
-        1.  Ndvi
-        2.  Ndwi
-
-6.  Evaluate the model
-
-    1.  A confusion matrix
-
-7.  Mapping the result
+[CASA0025: Building Spatial Applications with Big Data - 7  Refinery Identification (oballinger.github.io)](https://oballinger.github.io/CASA0025/W07_refineries.html)
 
 ## Reflection
 
