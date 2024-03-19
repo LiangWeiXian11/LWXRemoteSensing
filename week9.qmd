@@ -61,7 +61,7 @@ Polarization refers to the orientation of the electric field vector of the radar
 ### Common Bands:
 
 | Band | Frequency (GHz) | Wavelength (cm) | Typical Application                                                                                                                                                              |
-|------|-----------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|---------|---------|---------|-----------------------------------------------|
 | X    | 8-12            | 3.8-2.4         | High resolution SAR (urban monitoring,; ice and snow, little penetration into vegetation cover; fast coherence decay in vegetated areas)                                         |
 | C    | 4-8             | 7.5-3.8         | SAR Workhorse (global mapping; change detection; monitoring of areas with low to moderate penetration; higher coherence); ice, ocean maritime navigation                         |
 | X    | 2-4             | 15-7.5          | Little but increasing use for SAR-based Earth observation; agriculture monitoring (NISAR will carry an S-band channel; expends C-band applications to higher vegetation density) |

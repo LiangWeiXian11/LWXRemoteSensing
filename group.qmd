@@ -1,0 +1,54 @@
+# Group
+
+## Summary
+
+### **urban heat island (UHI)**
+
+**Study area: Hong Kong**
+
+**Problem:**
+
+Hong Kong is a bustling urban area where population growth and the proliferation of buildings have worsened the urban heat island effect. The sheer number of buildings and concrete surfaces in the city absorb and hold onto heat, leading to higher temperatures compared to suburban areas. Changes in land use, like urban sprawl and increased concrete covering, have reduced green spaces, disrupting natural cooling processes and making the urban heat island effect even more severe. During summer, the streets of Hong Kong become filled with hot air from vehicle exhaust and air conditioning units, which gets trapped between the narrow streets and high-rise buildings. This, coupled with the intense summer heat, makes it feel uncomfortably hot and stifling.
+
+There are three directions:
+
+-   Heat hazard: High temperature zone identification; calculated by LST
+
+-   Heat Exposure: calculated by population density
+
+-   Heat vulnerability: economic indicator; find where weak people\\group concentrated
+
+**How to deal with:**
+
+In the face of these challenges, the Hong Kong Government needs to adopt systematic measures to cope with them, including measures to reduce greenhouse gas emissions, expedite the development of renewable energy, improve energy efficiency, and promote a low-carbon economy. Secondly, urban planning and new infrastructures must mandatorily include climate change impact assessment and provide measures to mitigate the urban heat island effect, such as increasing green coverage, zero-carbon buildings, parks and green spaces, and shading facilities to reduce heat in the city.
+
+Source: [Friends of the Earth.](https://www.foe.org.hk/NewsDetail.aspx?md=40000&mid=40000&cid=42&id=2315)
+
+In more detail,
+
+1.  Providing targeted heat relief for **specific community/vulnerable groups**;
+
+2.  Enhancing heat relief measures/shelters in **public places**;
+
+3.  Incorporating **greenery in building design**; and/or
+
+4.  Fostering **research collaborations** to develop urban cooling solutions.
+
+## **Hong Kong's Response to UHI**
+
+Hong Kong has been implementing various heat relief measures while others argue that HK's government should do more:
+
+1.  **Public infrastructure for hot weather.** According to the [Hong Kong Climate Action Blueprint 2030+](https://www.legco.gov.hk/yr16-17/chinese/panels/ea/papers/ea20170626cb1-1164-3-c.pdf%3E) published in 2017, the Government reminds the public of very hot weather and opens **night-time temporary summer centers** managed by the Home Affairs Department from 10:30 p.m. to 8:00 a.m. for people in need while the Very Hot Weather Warning is in force. Additional **drinking fountains** are also provided in public places.
+2.  High temperature allowance for Vulnerable groups. Although some people argue that the government should offer more heat relief measures such as high temperature subsidy, **only one private company** committed to provide this assistance.
+    1.  In Hong Kong, there are **119,100 households** living in various types of unfit accommodation, ranging from partitioned flats to caged homes and rooftop structures. Notwithstanding the above temporary shelter measures, some tenants in unfit dwellings are reported to have difficulties in affording the high cost of electricity for air-conditioning in summer, and some of these dwellings are not even equipped with air-conditioners.
+    2.  As hot weather is becoming more common, there are views in the community **urging the authorities to introduce more heat relief measures**, such as the provision of **a high temperature allowance and more free cooling facilities**, for use by tenants of unfit dwellings, which are cramped and poorly ventilated, and where indoor temperatures have been reported to be as high as 40 degrees Celsius or above.
+    3.  **However**, at present, there are **no specific heat relief measures** provided to those living in inadequate housing. Following the service renewal agreement with the Government, a power company has **committed** to allocating a sum from its energy saving fund to help the disadvantaged. For example, it has pledged to provide an annual financial assistance (HK\$500) for 10000 subdivided unit households. See CLP Power (2018).
+3.  Urban greening.
+    1.  Green plants can significantly reduce urban temperatures by providing shade and cooling effects, while the government has green building standards to encourage the temperature-reducing designs.
+    2.  However, there's also a lack of support for existing building owners to adopt GBA standards. Following a local university's green roof **collapse** in 2016, similar projects were **halted**.
+
+Source: [The Legislative Council.](https://www.legco.gov.hk/research-publications/english/essentials-2021ise04-measures-to-tackle-urban-heat.htm)
+
+
+
+## Reflection

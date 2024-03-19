@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>LWXRemoteSensing - 9&nbsp; Week 9 SAR</title>
+<title>LWXRemoteSensing - 5&nbsp; Week 5</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./group.html" rel="next">
-<link href="./week8.html" rel="prev">
+<link href="./week6.html" rel="next">
+<link href="./week4.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week9.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Week 9 SAR</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week5.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -131,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week5.html" class="sidebar-item-text sidebar-link">
+  <a href="./week5.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></span></a>
   </div>
 </li>
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./week9.html" class="sidebar-item-text sidebar-link active">
+  <a href="./week9.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Week 9 SAR</span></span></a>
   </div>
 </li>
@@ -183,35 +183,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a>
-  <ul class="collapse">
-  <li><a href="#synthetic-aperture-radarsar" id="toc-synthetic-aperture-radarsar" class="nav-link" data-scroll-target="#synthetic-aperture-radarsar"><span class="header-section-number">9.1.1</span> Synthetic Aperture Radar(SAR)</a></li>
-  <li><a href="#sar-polarization" id="toc-sar-polarization" class="nav-link" data-scroll-target="#sar-polarization"><span class="header-section-number">9.1.2</span> SAR polarization</a></li>
-  <li><a href="#common-bands" id="toc-common-bands" class="nav-link" data-scroll-target="#common-bands"><span class="header-section-number">9.1.3</span> Common Bands:</a></li>
-  </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">9.2</span> Application</a>
-  <ul class="collapse">
-  <li><a href="#t-test" id="toc-t-test" class="nav-link" data-scroll-target="#t-test"><span class="header-section-number">9.2.1</span> T-test</a></li>
-  <li><a href="#sentinel-1-sar" id="toc-sentinel-1-sar" class="nav-link" data-scroll-target="#sentinel-1-sar"><span class="header-section-number">9.2.2</span> Sentinel-1 SAR</a></li>
-  <li><a href="#sar-for-crop-yield-estimation" id="toc-sar-for-crop-yield-estimation" class="nav-link" data-scroll-target="#sar-for-crop-yield-estimation"><span class="header-section-number">9.2.3</span> SAR for crop yield estimation</a></li>
-  </ul></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a>
-  <ul class="collapse">
-  <li><a href="#new-terms" id="toc-new-terms" class="nav-link" data-scroll-target="#new-terms"><span class="header-section-number">9.3.1</span> New terms:</a></li>
-  </ul></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Week 9 SAR</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></h1>
 </div>
 
 
@@ -226,179 +205,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="summary" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
-<section id="synthetic-aperture-radarsar" class="level3" data-number="9.1.1">
-<h3 data-number="9.1.1" class="anchored" data-anchor-id="synthetic-aperture-radarsar"><span class="header-section-number">9.1.1</span> Synthetic Aperture Radar(SAR)</h3>
-<p>Synthetic Aperture Radar (SAR) is an active radar system commonly used for Earth observation and remote sensing. It operates by transmitting and receiving microwave signals, utilizing the interaction between radar waves and the Earth’s surface to gather information about surface features. Compared to traditional remote sensing techniques, there are some differences :</p>
-<ul>
-<li><p>Active sensors</p></li>
-<li><p>Have surface texture data</p></li>
-<li><p>See through weather and clouds</p></li>
-<li><p>Different wavelengths - different applications</p></li>
-</ul>
-<p>The principle of SAR involves a platform (typically an aircraft or satellite) moving along a specific direction and emitting radar waves towards the ground. By recording phase information from different positions, the SAR system can synthesize a long virtual antenna, achieving high-resolution imaging.</p>
-<p><strong>Why is the water black in SAR image?</strong></p>
-<p>Calm water (and smooth surfaces) reflects the radar pulses away from the sensor (<a href="https://nisar.jpl.nasa.gov/mission/get-to-know-sar/overview/#:~:text=Interpreting%20Radar%20Images&amp;text=Regions%20of%20calm%20water%20and,scattered%20back%20to%20the%20antenna.">NASA</a>). Basically, Water do not reflect radar signals directly according to transmitted angle, I mean <strong>water usually reflects it off elsewhere.</strong></p>
-<ul>
-<li><p><strong>Antenna in SAR:</strong></p>
-<ul>
-<li><p>An antenna is a device used to transmit or receive electromagnetic waves.</p></li>
-<li><p>RADAR aperture = the antenna</p></li>
-<li><p>Longer antenna = narrower beam and a higher resolution</p></li>
-<li><p>“synthetic” aperture = “synthesize a long antenna by combining signals, or echoes, received by the radar as it moves along a flight track”</p></li>
-</ul></li>
-<li><p><strong>Phase in SAR:</strong></p>
-<ul>
-<li><p>A SAR signal has both&nbsp;<strong>amplitude</strong>&nbsp;(backscatter) and&nbsp;<strong>phase</strong>&nbsp;data</p>
-<ul>
-<li>Location of wave on the cycle when it comes back to the sensor</li>
-</ul></li>
-<li><p><u><em>“Phase change means ground move”</em></u></p>
-<ul>
-<li>Interferometric synthetic aperture radar (InSAR) techniques combine two or more SAR images over the same region to reveal surface topography or surface motion</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="sar-polarization" class="level3" data-number="9.1.2">
-<h3 data-number="9.1.2" class="anchored" data-anchor-id="sar-polarization"><span class="header-section-number">9.1.2</span> SAR polarization</h3>
-<p>Polarization refers to the orientation of the electric field vector of the radar waves transmitted and received by the SAR system. SAR systems can transmit and receive radar waves in different polarization states:</p>
-<ul>
-<li><p>HH (Horizontal-Horizontal): In this polarization state, both the transmitted and received radar waves have their electric field vectors oriented horizontally, <strong>parallel to the Earth’s surface</strong>.</p>
-<ul>
-<li>double-bounce scattering: stemmy vegetation–trees; manmade structures: buildings</li>
-</ul></li>
-<li><p>VV (Vertical-Vertical): In this polarization state, both the <u>transmitted and received</u> radar waves have their electric field vectors oriented vertically, <strong>perpendicular to the Earth’s surface</strong>.</p>
-<ul>
-<li>rough surface scattering: bare ground, water</li>
-</ul></li>
-<li><p>HV (Horizontal-Vertical)/VH (Vertical-Horizontal):</p>
-<ul>
-<li>Volume scattering: vegetation; high-penetration soil: sand, dry porous soils.</li>
-</ul></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/week9/HVVH.jpg" class="img-fluid figure-img" width="668"></p>
-<figcaption class="figure-caption">Polarization. Source: <a href="https://www.earthdata.nasa.gov/s3fs-public/imported/SARPolarization.jpg?VersionId=mSa4j.XwWY8P_9Y0fxw9Ycp0FjGxLDaY">NASA</a></figcaption>
-</figure>
-</div>
-</section>
-<section id="common-bands" class="level3" data-number="9.1.3">
-<h3 data-number="9.1.3" class="anchored" data-anchor-id="common-bands"><span class="header-section-number">9.1.3</span> Common Bands:</h3>
-<table class="table">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 63%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Band</th>
-<th>Frequency (GHz)</th>
-<th>Wavelength (cm)</th>
-<th>Typical Application</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>X</td>
-<td>8-12</td>
-<td>3.8-2.4</td>
-<td>High resolution SAR (urban monitoring,; ice and snow, little penetration into vegetation cover; fast coherence decay in vegetated areas)</td>
-</tr>
-<tr class="even">
-<td>C</td>
-<td>4-8</td>
-<td>7.5-3.8</td>
-<td>SAR Workhorse (global mapping; change detection; monitoring of areas with low to moderate penetration; higher coherence); ice, ocean maritime navigation</td>
-</tr>
-<tr class="odd">
-<td>X</td>
-<td>2-4</td>
-<td>15-7.5</td>
-<td>Little but increasing use for SAR-based Earth observation; agriculture monitoring (NISAR will carry an S-band channel; expends C-band applications to higher vegetation density)</td>
-</tr>
-<tr class="even">
-<td>L</td>
-<td>1-2</td>
-<td>30-15</td>
-<td>Medium resolution SAR (geophysical monitoring; biomass and vegetation mapping; high penetration, InSAR)</td>
-</tr>
-</tbody>
-</table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/week9/Band.jpg" class="img-fluid figure-img" width="668"></p>
-<figcaption class="figure-caption">SAR XCLP-Band. Source: <a href="https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar">NASA</a></figcaption>
-</figure>
-</div>
-</section>
-</section>
-<section id="application" class="level2" data-number="9.2">
-<h2 data-number="9.2" class="anchored" data-anchor-id="application"><span class="header-section-number">9.2</span> Application</h2>
-<section id="t-test" class="level3" data-number="9.2.1">
-<h3 data-number="9.2.1" class="anchored" data-anchor-id="t-test"><span class="header-section-number">9.2.1</span> T-test</h3>
-<p>In Change Detection:</p>
-<p>In order to detect change between two images, the basic strategy would be to take an image taken before an event and subtract it from an image taken after.</p>
-<p>It is no denying that Cities are usually in a state of change. Construction, demolition and even the growth of vegetation can be detected by the algorithm, which means the change may caused by different reasons. Therefore, we need to distinguish between areas that have changed because of relevant events and ones that have changed for other irrelevent reasons. We can use a t-test to determine whether the change in means is significant using the mean and the standard deviations of two sets of numbers.</p>
-<p>In this case, the two samples are the pre- and post-event images. The t-test is applied to each pixel in the image, allowing us to determine whether the change is statistically significant.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/week9/T_test.png" class="img-fluid figure-img" width="338"></p>
-<figcaption class="figure-caption">CASA00025: Practical.</figcaption>
-</figure>
-</div>
-<p>This procedure gives us a number called a t-value, which is a measure of how many standard deviations the difference between the two means is.</p>
-<p>Overall, if the t-value is greater than 2, then the difference between the two means is significant. If the t-value is less than 2, then the difference is not significant. (2 is a fairly abitrary cutoff, but it’s the most commonly used one since it corresponds to the <strong>95% confidence interval</strong>)</p>
-<ul>
-<li><p><strong>t-value &gt; 2; the change is significant.</strong></p></li>
-<li><p><strong>t-value &lt; 2; the change is not significant.</strong></p></li>
-</ul>
-<p>Source: <a href="https://oballinger.github.io/CASA0025/W09_blast.html">CASA00025: Practical 9 Blast Damage Assessment.</a></p>
-</section>
-<section id="sentinel-1-sar" class="level3" data-number="9.2.2">
-<h3 data-number="9.2.2" class="anchored" data-anchor-id="sentinel-1-sar"><span class="header-section-number">9.2.2</span> Sentinel-1 SAR</h3>
-<p>Sentinel-1 Synthetic Aperture Radar (SAR) imagery “SAR instruments send pulses of microwaves toward Earth’s surface and listen for the reflections of those waves. The radar waves can penetrate cloud cover, vegetation, and the dark of night to detect changes that might not show up in visible light imagery. When Earth’s crust moves due to an earthquake, when dry land is suddenly covered by flood water, or when buildings have been damaged or toppled, the amplitude and phase of radar wave reflections changes in those areas and indicates to the satellite that something on the ground has changed.”</p>
-<p>SENTINEL-1 is an imaging radar mission providing continuous <u>all-weather, day-and-night</u> imagery at <strong>C-band.</strong> The SENTINEL-1 constellation provides <u>high reliability, improved revisit time, geographical coverage and rapid data dissemination</u> to support operational applications in the priority areas of marine monitoring, land monitoring and emergency services.</p>
-<p>Source: <a href="https://sentinels.copernicus.eu/web/sentinel/user-guides/sentinel-1-sar/overview">Sentinel Online.</a></p>
-<p><strong>Data in GEE：</strong></p>
-<p><strong>Sentinel-1 SAR GRD: C-band Synthetic Aperture Radar Ground Range Detected, log scaling.</strong></p>
-<p>Dataset Availability: 2014-10-03T00:00:00Z–2024-03-14T16:05:01.</p>
-<p>Description: The Sentinel-1 mission provides data from a dual-polarization C-band Synthetic Aperture Radar (SAR) instrument at 5.405GHz (C band). This collection includes the S1 Ground Range Detected (GRD) scenes, processed using the Sentinel-1 Toolbox to generate a calibrated, ortho-corrected product. The collection is updated daily. New assets are ingested within two days after they become available.</p>
-<p>Bands:</p>
-<ul>
-<li><p>VV: single co-polarization, vertical transmit/vertical receive</p></li>
-<li><p>HH: single co-polarization, horizontal transmit/horizontal receive</p></li>
-<li><p>VV + VH: dual-band cross-polarization, vertical transmit/horizontal receive</p></li>
-<li><p>HH + HV: dual-band cross-polarization, horizontal transmit/vertical receive</p></li>
-</ul>
-<p>Each scene also includes an additional ‘angle’ band that contains the approximate incidence angle from ellipsoid in degrees at every point. This band is generated by interpolating the ‘incidenceAngle’ property of the ‘geolocationGridPoint’ gridded field provided with each asset.</p>
-<p>Data Source: <a href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S1_GRD#description">Google Earth Engine.</a></p>
-</section>
-<section id="sar-for-crop-yield-estimation" class="level3" data-number="9.2.3">
-<h3 data-number="9.2.3" class="anchored" data-anchor-id="sar-for-crop-yield-estimation"><span class="header-section-number">9.2.3</span> SAR for crop yield estimation</h3>
-<p>Nikolaos-Christos Vavlas (2020) considered that the field-specific SAR time series can be used to characterise growth and maturation periods and to estimate the performance of cereals. In more detail, the day of the year of the maximum VH/VV value was negatively correlated with yield (r = −0.56), and the duration of “full” vegetation was positively correlated with yield (r = 0.61).</p>
-<p>In order to reduce the variability of SAR data, we may chose to use imagery from only the ascending satellite passing as images from the descending orbit were often affected by morning dew (Vavlas, N, 2020). Similar observations have been made in other studies, indicating <strong>greater certainty</strong> when using the <strong>ascending</strong> rather the descending phase of the satellite for predicting crop state variables in this area.</p>
-</section>
-</section>
-<section id="reflection" class="level2" data-number="9.3">
-<h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
-<p>In this week, I learn the knowledge of Synthetic Aperture Radar (SAR), which is a useful imaging technology used in various applications. It operates with different polarization bands, allowing for versatile data collection and analysis. In addition, Sentinel-1 SAR data is accessible in Google Earth Engine, which has a range of applications like using T-tests to do damage detection or applied to crop yield estimation.</p>
-<section id="new-terms" class="level3" data-number="9.3.1">
-<h3 data-number="9.3.1" class="anchored" data-anchor-id="new-terms"><span class="header-section-number">9.3.1</span> New terms:</h3>
-<ul>
-<li><p>SAR = active sensor, see through clouds, records energy reflected back</p></li>
-<li><p>InSAR = used for DEMs, converting phase different to relative height</p></li>
-<li><p>DInSAR = changes between two images in time. Looking at movement of land (uplift or sinking) with topography removed (using a DEM)</p></li>
-<li><p>Interferogram 干涉图</p></li>
-</ul>
+<p>There is no learning dairy in this week, so please <a href="https://liangweixian11.github.io/LWXRemoteSensing/week5.html">link</a> to the group work component.</p>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -636,13 +445,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./week8.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8 Advanced Classification</span></span>
+      <a href="./week4.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 Policy</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./group.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Group</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./week6.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6 GEE</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
