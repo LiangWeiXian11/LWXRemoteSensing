@@ -1,4 +1,4 @@
-# Week2 ppt -- to be done
+# Week2 ppt
 
 This week I select Landset 8 to describe. Here is The [link](https://liangweixian11.github.io/RS_PPT/). And it is also possible to browse directly on the following pages
 
@@ -7,3 +7,19 @@ xaringanExtra::embed_xaringan(
   url = "https://liangweixian11.github.io/RS_PPT/",
   ratio = "16:9")
 ```
+
+## Reflection:
+
+**Latest version of Landsat**
+
+Landsat is the only U.S. satellite system designed and operated to repeatedly observe the global land surface at a moderate scale that shows both natural and human-induced change.
+
+![Landsat data in the U.S. archive contributed by each Landsat satellite. Source: [USGS/NASA](https://landsat.gsfc.nasa.gov/satellites/landsat-9/)](img/week2/LandsatUS.png){width="668"}
+
+**Landsat 9:**
+
+"Landsat 9 was [successfully launched](#0 "/article/newly-launched-landsat-9-mission-monitor-earths-landscapes") on Monday, Sept. 27, 2021 from Vandenberg Space Force Base in California. Landsat 9 data is publicly available from USGS."
+
+Landsat 8 has added more data per year than any proceeding satellite, While, landsat 9 will collect data at the same rate as Landsat 8. Starting with the launch of Landsat 1. Landsat 9, launched September 27, 2021, will continue the legacy of the Landsat program.
+
+![Timeline of the Landsat program. Source: [Landsat science](https://landsat.gsfc.nasa.gov/satellites/landsat-9/)](img/week2/Landsat_timeline.gif){width="668"}
