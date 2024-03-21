@@ -40,49 +40,23 @@ In GEE the scale (resolution) is set by the output not input. (Earth Engine sele
 
 ### Functions:
 
+There is a list of common functions that can be used in GEE.
+
 -   **Geometry operations (e.g. spatial operations)**
 
-    -   Joins
+    -   Joins: left/right/inner join && spatial join
 
-        -   left/right/inner join
+    -   Zonal statistics: average temperature per [region]{.underline} && [mean/maximun]{.underline} value
 
-        -   spatial join
-
-    -   Zonal statistics
-
-        -   average temperature per neighbourhood/region
-
-        -   mean/maximun value
-
-    -   High/Low pass filtering
-
-        -   Smoothing
-
-        -   sharpening
+    -   [High/Low]{.underline} pass filtering: Smoothing and sharpening
 
 -   **Methods**
 
-    -   Machine learning and Deep learning
-
-    -   Classification (Supervised and unsupervised)
-
-    -   Regressions
-
-        -   y: dependent variable
-
-        -   x : independent variable (often **time**)
+    -   Machine learning and Deep learning; Classification (Supervised and unsupervised); Regressions
 
 -   **Applications/outputs**
 
-    -   Online charts
-
-    -   Scalable geospatial applications with GEE data
-
-    -   Users interactive interface
-
-        -   query the data
-
-        -   Visualize the results
+    -   Online charts； Scalable geospatial applications with GEE data; Users interactive interface (query the data && Visualize the results)
 
 ### Categories of geospatial data
 
