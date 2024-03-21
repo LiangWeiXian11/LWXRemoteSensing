@@ -8,17 +8,11 @@ Object-based image analysis (OBIA) is a method used in remote sensing and digita
 
 Main processes:
 
-1.  Image Segmentation
+1.  Image Segmentation: **segment** the preprocessed image into homogeneous regions or **objects** based on similarities in spectral, spatial, and/or textural characteristics.
 
-    **Segment** the preprocessed image into homogeneous regions or **objects** based on similarities in spectral, spatial, and/or textural characteristics.
+2.  Feature Extraction: a set of descriptive **features** are extracted for each object.
 
-2.  Feature Extraction
-
-    A set of descriptive **features** are extracted for each object.
-
-3.  Classification
-
-    Objects are classified into different **classes or categories** using features.
+3.  Classification: objects are classified into different **classes or categories** using features.
 
 ### Sub pixel analysis
 
@@ -42,7 +36,7 @@ The **V-I-S model** in urban areas: Vegetation-Impervious surface-Soil (V-I-S)
 
 ![Confusion matrix. Source: [Confusion matrix chart](https://towardsdatascience.com/accuracy-precision-recall-or-f1-331fb37c5cb9)](img/week8/Overall_ConfusionM1.png){width="662"}
 
-In more detail, there are three main terms:
+In more detail, there are four main terms:
 
 1.  **Accuracy**
 
@@ -77,9 +71,7 @@ Cross-validation can estimate how the model will generalize to an independent da
 
 Problem: **spatial autocorrelation** between training and test sets, it may cause **overfitting.**
 
-When the training data close to the testing data, the Spatial autocorrelation may happen between training and test sets.
-
-In more specific, when it comes to the Spatial autocorrelation, the Waldo Tobler's first Law of Geography can be mentioned...
+When the training data close to the testing data, the Spatial autocorrelation may happen between training and test sets. In more specific, when it comes to the Spatial autocorrelation, the Waldo Tobler's first Law of Geography can be mentioned...
 
 **"Everything is related to everything else, but near things are more related than distant things."**
 
@@ -89,11 +81,9 @@ In more detail:
 
 -   In vector data, objects may accumulate in the center and have similar characteristics or attributes.
 
--   In remote sensing data, two points may share the same pixel, that means those two points have same value.
+-   In EO data, two points may share the same pixel, that means those two points have same value.
 
-**Overfitting:**
-
-Result: the model will have better accuracy that it actually does---thel model is not generalisable.
+**Overfitting:** the model will have better accuracy that it actually does---the model is not generalisable.
 
 **Spatial Cross validation:**
 
@@ -108,6 +98,8 @@ Spatially partition the folded data, folds are from cross validation.
 Last week, we have mentioned the overall workflow of crop classification. In this week, we will apply it to a real-work issue (crop type classification).
 
 Asli Ozdarici Ok (2012) indicated that the overall accuracies of the parcel-based approach computed for **the Random Forest method** is 85.89%, which is about 8% better than the corresponding result of Maximum Likelihood Classification (MLC).
+
+![Results of parcel-based approach of the RF method computed for different parameter combinations. (Asli Ozdarici Ok, 2012.)](img/week8/RFAccuracy.png)
 
 Therefore, in this case, I will use t**he Random Forest** to classify crop types. I will use a python notebook as a starter, which is available on the [developmentseed](https://developmentseed.org/sat-ml-training/), and put the link at the bottom. In general, I will summarize the processes and highlight the vital part.
 
@@ -140,4 +132,4 @@ Therefore, in this case, I will use t**he Random Forest** to classify crop types
 
 ## Reflection
 
-This week, we focused on improving EO data processing and evaluating classification model accuracy. We discussed the importance of selecting suitable datasets, using techniques like cross-validation, and assessing accuracy with methods such as error matrices and Kappa statistics. We also considered spatial autocorrelation and explored strategies like object-based image analysis and spatial cross-validation to address it. Finally, I read a paper evaluating the performance of server models and used a Python notebook on DevelopmentSeed that used random forests for crop type classification.
+This week, we focused on improving EO data processing and evaluating classification model accuracy. We discussed the importance of selecting suitable datasets, using techniques like cross-validation, and assessing accuracy with methods such as error matrices and Kappa statistics. We also considered spatial autocorrelation and explored strategies like object-based image analysis and spatial cross-validation to address it. Finally, I read a paper evaluating the performance of server models and used a Python notebook on Development-Seed that used random forests for crop type classification.

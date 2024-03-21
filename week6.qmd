@@ -30,7 +30,7 @@ In GEE the scale (resolution) is set by the output not input. (Earth Engine sele
 
 ### Basic guiding of user interface
 
-![User interface . Source: [CASA0023 week6 lecture](https://andrewmaclachlan.github.io/CASA0023-lecture-5/#31)](img/week6/user%20interface.png){width="652"}
+![User interface . Source: [CASA0023 week6 lecture](https://andrewmaclachlan.github.io/CASA0023-lecture-5/#31)](img/week6/user%20interface.png){width="493"}
 
 ### Constructor
 
@@ -66,9 +66,9 @@ There is a list of common functions that can be used in GEE.
 
 -   Name: NAIP: National Agriculture Imagery Program
 
--   Dataset Availability: 2002-06-15T00:00:00Z--2022-12-12T00:00:00
+-   Time Availability: 2002-06-15T00:00:00Z--2022-12-12T00:00:00
 
--   Resolution: 0.6 meters
+-   **Resolution: 0.6 meters**
 
 -   Bands
 
@@ -79,7 +79,7 @@ There is a list of common functions that can be used in GEE.
 | `B`  | dn    | Blue          |
 | `N`  | dn    | Near infrared |
 
-![NAIP. Source: [NAIP in GEE](https://developers.google.com/earth-engine/datasets/catalog/USDA_NAIP_DOQQ#description)](img/week6/High_resolution.png){width="674"}
+![NAIP. Source: [NAIP in GEE](https://developers.google.com/earth-engine/datasets/catalog/USDA_NAIP_DOQQ#description)](img/week6/High_resolution.png){width="555"}
 
 #### Land Surface Diagnostics
 
@@ -111,9 +111,7 @@ Climate and atmospheric data from the European Space Agency's Sentinel-5p satell
 
     -   **Resolution:** 30 meters
 
-    -   Band:
-
-        -   ST_B10 : Band 10 surface temperature
+    -   Band: ST_B10 : Band 10 surface temperature
 
 ## Reflection
 
@@ -121,8 +119,8 @@ This week's lecture briefly introduce the Google Earth Engine (GEE) and its poss
 
 ### New terms
 
--   pyramid 金字塔
+-   pyramid: a multi-resolution representation of an image dataset
 
--   resample 重采样
+-   resample: the process of changing the spatial resolution of a raster dataset
 
--   land surface **diagnostics** 陆地表面**诊断**
+-   land surface **diagnostics**: a set of methods and tools used to analyze and understand various aspects of the Earth's land surface

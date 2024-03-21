@@ -16,45 +16,23 @@ Synthetic Aperture Radar (SAR) is an active radar system commonly used for Earth
 
 The principle of SAR involves a platform (typically an aircraft or satellite) moving along a specific direction and emitting radar waves towards the ground. By recording phase information from different positions, the SAR system can synthesize a long virtual antenna, achieving high-resolution imaging.
 
+-   **Antenna in SAR:** An antenna transmits and receives electromagnetic waves. In radar, the antenna's aperture determines resolution. A longer antenna yields a narrower beam and higher resolution. Synthetic aperture radar combines signals received along a flight track to simulate a longer antenna, boosting resolution without increasing physical size.
+
+-   **Phase in SAR:** A SAR signal contains amplitude (backscatter) and phase data, with phase indicating the wave's position in the cycle upon return to the sensor. Changes in phase indicate ground movement. Interferometric synthetic aperture radar (InSAR) combines multiple SAR images of the same area to unveil surface topography or motion.
+
 **Why is the water black in SAR image?**
 
 Calm water (and smooth surfaces) reflects the radar pulses away from the sensor ([NASA](https://nisar.jpl.nasa.gov/mission/get-to-know-sar/overview/#:~:text=Interpreting%20Radar%20Images&text=Regions%20of%20calm%20water%20and,scattered%20back%20to%20the%20antenna.)). Basically, Water do not reflect radar signals directly according to transmitted angle, I mean **water usually reflects it off elsewhere.**
-
--   **Antenna in SAR:**
-
-    -   An antenna is a device used to transmit or receive electromagnetic waves.
-
-    -   RADAR aperture = the antenna
-
-    -   Longer antenna = narrower beam and a higher resolution
-
-    -   "synthetic" aperture = "synthesize a long antenna by combining signals, or echoes, received by the radar as it moves along a flight track"
-
--   **Phase in SAR:**
-
-    -   A SAR signal has both **amplitude** (backscatter) and **phase** data
-
-        -   Location of wave on the cycle when it comes back to the sensor
-
-    -   [*"Phase change means ground move"*]{.underline}
-
-        -   Interferometric synthetic aperture radar (InSAR) techniques combine two or more SAR images over the same region to reveal surface topography or surface motion
 
 ### SAR polarization
 
 Polarization refers to the orientation of the electric field vector of the radar waves transmitted and received by the SAR system. SAR systems can transmit and receive radar waves in different polarization states:
 
--   HH (Horizontal-Horizontal): In this polarization state, both the transmitted and received radar waves have their electric field vectors oriented horizontally, **parallel to the Earth's surface**.
+-   HH (Horizontal-Horizontal): In this polarization state, both the transmitted and received radar waves have their electric field vectors oriented horizontally, parallel to the Earth's surface; **Double-bounce scattering**: stemmy vegetation--trees; manmade structures: buildings
 
-    -   double-bounce scattering: stemmy vegetation--trees; manmade structures: buildings
+-   VV (Vertical-Vertical): In this polarization state, both the [transmitted and received]{.underline} radar waves have their electric field vectors oriented vertically, perpendicular to the Earth's surface; **Surface scattering**: bare ground, water.
 
--   VV (Vertical-Vertical): In this polarization state, both the [transmitted and received]{.underline} radar waves have their electric field vectors oriented vertically, **perpendicular to the Earth's surface**.
-
-    -   rough surface scattering: bare ground, water
-
--   HV (Horizontal-Vertical)/VH (Vertical-Horizontal):
-
-    -   Volume scattering: vegetation; high-penetration soil: sand, dry porous soils.
+-   HV (Horizontal-Vertical)/VH (Vertical-Horizontal); **Volume scattering**: vegetation; high-penetration soil: sand, dry porous soils.
 
 ![Polarization. Source: [NASA](https://www.earthdata.nasa.gov/s3fs-public/imported/SARPolarization.jpg?VersionId=mSa4j.XwWY8P_9Y0fxw9Ycp0FjGxLDaY)](img/week9/HVVH.jpg){width="668"}
 
@@ -77,7 +55,7 @@ In Change Detection:
 
 In order to detect change between two images, the basic strategy would be to take an image taken before an event and subtract it from an image taken after.
 
-It is no denying that Cities are usually in a state of change. Construction, demolition and even the growth of vegetation can be detected by the algorithm, which means the change may caused by different reasons. Therefore, we need to distinguish between areas that have changed because of relevant events and ones that have changed for other irrelevent reasons. We can use a t-test to determine whether the change in means is significant using the mean and the standard deviations of two sets of numbers.
+It is no denying that Cities are usually in a state of **change**. Construction, demolition and even the growth of vegetation can be detected by the algorithm, which means the change may caused by different reasons. Therefore, we need to distinguish between areas that have changed because of **relevant events** and ones that have changed for other **irrelevent reasons**. We can use a **t-test** to determine whether the change in means is significant using the mean and the standard deviations of two sets of numbers.
 
 In this case, the two samples are the pre- and post-event images. The t-test is applied to each pixel in the image, allowing us to determine whether the change is statistically significant.
 
@@ -127,7 +105,9 @@ Data Source: [Google Earth Engine.](https://developers.google.com/earth-engine/d
 
 Nikolaos-Christos Vavlas (2020) considered that the field-specific SAR time series can be used to characterise growth and maturation periods and to estimate the performance of cereals. In more detail, the day of the year of the maximum VH/VV value was negatively correlated with yield (r = −0.56), and the duration of "full" vegetation was positively correlated with yield (r = 0.61).
 
-In order to reduce the variability of SAR data, we may chose to use imagery from only the ascending satellite passing as images from the descending orbit were often affected by morning dew (Vavlas, N, 2020). Similar observations have been made in other studies, indicating **greater certainty** when using the **ascending** rather the descending phase of the satellite for predicting crop state variables in this area.
+![Scatter plot showing the relationship between Yield and (a) Duration and (b) the timing of the maximum value of VH/VV (Tmax). The r value and best fit linear line for each relationship, across the three seasons, is shown.](img/week9/R_value.png){width="3739"}
+
+In order to reduce the variability of SAR data, we may chose to use imagery from **only the ascending satellite** passing as images from the [descending orbit were often affected by morning dew]{.underline} (Vavlas, N, 2020). Similar observations have been made in other studies, indicating **greater certainty** when using the **ascending** rather the descending phase of the satellite for predicting crop state variables in this area.
 
 ## Reflection
 
@@ -141,4 +121,4 @@ In this week, I learn the knowledge of Synthetic Aperture Radar (SAR), which is 
 
 -   DInSAR = changes between two images in time. Looking at movement of land (uplift or sinking) with topography removed (using a DEM)
 
--   Interferogram 干涉图
+-   Interferogram = a visual representation formed by combining two or more SAR images of the same area taken at different times

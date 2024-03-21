@@ -18,8 +18,8 @@ Landsat is the only U.S. satellite system designed and operated to repeatedly ob
 
 **Landsat 9:**
 
-"Landsat 9 was [successfully launched](#0 "/article/newly-launched-landsat-9-mission-monitor-earths-landscapes") on Monday, Sept. 27, 2021 from Vandenberg Space Force Base in California. Landsat 9 data is publicly available from USGS."
+"Landsat 9 was [successfully launched](#0 "/article/newly-launched-landsat-9-mission-monitor-earths-landscapes") on Monday, Sept. 27, **2021** from Vandenberg Space Force Base in California. Landsat 9 data is publicly available from USGS."
 
-Landsat 8 has added more data per year than any proceeding satellite, While, landsat 9 will collect data at the same rate as Landsat 8. Starting with the launch of Landsat 1. Landsat 9, launched September 27, 2021, will continue the legacy of the Landsat program.
+Landsat 8 has added more data per year than any proceeding satellite, While, landsat 9 will collect data at [**the same rate** as Landsat 8]{.underline}.
 
 ![Timeline of the Landsat program. Source: [Landsat science](https://landsat.gsfc.nasa.gov/satellites/landsat-9/)](img/week2/Landsat_timeline.gif){width="668"}
