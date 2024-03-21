@@ -26,7 +26,7 @@ When humans have some generalizations, we can reach a logical assumption or conc
 
     2.  A decision tree can easily be transformed to a set of rules by mapping from the root node to the leaf nodes one by one.
 
-![Rule of Decision Tree. Source: [Decision Tree.](https://www.saedsayad.com/decision_tree.htm)](img/week7/classificationTree.png){width="662"}
+![Rule of Decision Tree. Source: [Decision Tree.](https://www.saedsayad.com/decision_tree.htm)](img/week7/classificationTree.png){width="568"}
 
 ```         
 3.  Regression trees
@@ -38,15 +38,15 @@ When humans have some generalizations, we can reach a logical assumption or conc
     Case 1; one line doesn't fit the whole dataset:
 ```
 
-![Case 1A. Source: Andrew drew it in Lecture 7](img/week7/RegressionC1.png){width="566"}
+![Case 1A. Source: Andrew drew it in Lecture 7](img/week7/RegressionC1.png){width="51%"}
 
-![Case 1B. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC1B.png){width="572"}
+![Case 1B. Source: How do Regression Trees Work?](img/week7/RegressionC1B.png){width="56%"}
 
 ```         
     Case 2; regression tree; divide to different subset then doing regression on each individual component.
 ```
 
-![Case 2. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC2.png){width="485"}
+![Case 2. Source: [How do Regression Trees Work?](https://medium.datadriveninvestor.com/how-do-regression-trees-work-94999c5105d)](img/week7/RegressionC2.png){width="386"}
 
 ```         
     So in this case, the tree uses the average value (100%) as the prediction value for dosages between 14.5 and 23.5.
@@ -54,21 +54,13 @@ When humans have some generalizations, we can reach a logical assumption or conc
 
 ### Overfitting
 
--   bias
+-   bias: difference between predicted value and true value (oversimplifies model)
 
-    -   difference between predicted value and true value
-
-    -   oversimplifies model
-
--   variance
-
-    -   variability of model for a given point
-
-    -   (means does not genearlise well (the model is too good! ))
+-   variance: variability of model for a given point (not genearlise well)
 
 ![best model. Source: [Bellini and Cascella, 2022.](https://www.researchgate.net/publication/364826401_Understanding_basic_principles_of_Artificial_Intelligence_a_practical_guide_for_intensivists)](img/week7/overfitting.png){width="662"}
 
-### **supervised** classification **(**Image)
+### **Supervised** classification **(**Image)
 
 Main processes:
 
@@ -88,27 +80,15 @@ Main processes:
     -   Compare the model's predictions with the true labels from the test dataset to assess its performance
     -   Adjust the model's parameters or features
 
-Common methods:
+**Common methods:**
 
 -   Maximum likelihood
 
 -   SVM (support vector Machine)
 
-    -   Support Vector Machine (SVM) is a supervised learning classification algorithm. which is to find [a middle margin (an optimal separating hyperplane)]{.underline} that separates vertors of different classes while [maximizing the margin]{.underline} of separation.
+    -   Support Vector Machine (SVM) is a supervised learning classification algorithm. which is to find [a middle margin (an optimal separating hyperplane)]{.underline} that separates vertors of different classes while [maximizing the margin]{.underline} of separation. Meanwhile, it is a linear binary classifier that separates training data with the largest possible margin. It places a line (separating hyperplane) between classes, maximizing the distance to the closest points (support vectors).
 
-    -   (Basically) a linear binary classifier
-
-    -   Maximum **margin** between two classes of training data = **maximum margin classifier**
-
-        -   it finds the divide in the data and places a line at the division from the closest points
-
-    -   **support vectors** mean Points on the boundaries (and within) are
-
-    -   **separating hyperplane** = Middle margin
-
-    -   some misclassifications may happen and cause **misclassified instances**
-
-![SVM. Source: CASA 23 in Lecture 7](img/week7/SVM.png){width="566"}
+![SVM. Source: CASA 23 in Lecture 7](img/week7/SVM.png){width="480"}
 
 ## Application
 
@@ -136,8 +116,8 @@ In more detail, the decision between a single decision tree or a forest of trees
 
 ### New terms:
 
--   inductive learning = given context we can use experience to make judgement
+-   inductive learning: given context we can use experience to make judgement
 
--   maximum margin classifier 最大间隔分类器
+-   maximum margin classifier(MMC): a machine learning algorithm used for classification tasks.
 
--   separating hyperplane 分割超平面
+-   separating hyperplane: a decision boundary that divides the feature space into two regions

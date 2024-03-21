@@ -14,6 +14,8 @@ Source: [Circular of the Shenzhen Municipal People's Government on the Issuance 
 
 ### Main policy challenges and targets
 
+The above policy document mentions five areas of challenges. I will briefly describe these main issues in this part and give some possible action plans to address them in the application section.
+
 1.  Improve the quality of inefficient forests and young forests, accurately enhancing forest quality.
 
     In natural suburban parks, we will nurture and thin out large areas of concentrated young forests to promote forest transformation. This includes promoting tree growth, removing low-quality trees, increasing forest quality and volume, and enhancing forest carbon storage.
@@ -46,7 +48,7 @@ In this case, this action plan includes the goal 11 and 15, aiming to make local
 
 ## Application of EO data (to solve the policy challenge)
 
-### 1.Rehabilitation of inefficient forests and middle-aged and young-aged forests to accurately improve forest quality.
+### Rehabilitation of inefficient forests and middle-aged and young-aged forests to accurately improve forest quality.
 
 Identify inefficient forests and young and middle-aged forests to provide a basis for subsequent accurate improvement of forest quality.
 
@@ -62,7 +64,7 @@ Identify inefficient forests and young and middle-aged forests to provide a basi
 
     2.  DEM can reflect the slope and height of the terrain. Sometimes, poor-quality forest trees are distributed in areas with steep terrain. Therefore, we can use DEM to assist in identifying poor quality vegetation.
 
-### 2.Improve the quality of water source conservation forests in important water source areas and strengthen the effect of soil and water conservation.
+### Improve the quality of water source conservation forests in important water source areas and strengthen the effect of soil and water conservation.
 
 Identify the vegetation around the water protection zone and count the area
 
@@ -70,7 +72,7 @@ Identify the vegetation around the water protection zone and count the area
 
 2.  We extracted vegetation around water zone using NDVI and count the total area
 
-### 3.Promoting urban greening and upgrading greening quality
+### Promoting urban greening and upgrading greening quality
 
 Calculating the accessibility of green space in each region (per capita) and determining the priority areas for green construction
 
@@ -78,9 +80,9 @@ Calculating the accessibility of green space in each region (per capita) and det
 
 2.  Calculating the total area of green space in each region
 
-3.  quantify the [green space accessibility\*]{.underline} per capita by network analysis using population raster data and road vector data
+3.  quantify the green space accessibility\* per capita by network analysis using population raster data and road vector data
 
-### 4.Promoting the construction of boulevards
+### Promoting the construction of boulevards
 
 Identification of roads with substandard shade coverage rate
 
@@ -88,7 +90,7 @@ Identification of roads with substandard shade coverage rate
 
 2.  Identify roads with low shade coverage through regional statistics, as a subsequent focus of construction, to improve the coverage of shade roads in urban built-up areas
 
-### 5.Connecting mountain and water ecological corridor networks
+### Connecting mountain and water ecological corridor networks
 
 Identification of water, forests and green spaces and identification of ecological corridors
 
@@ -102,9 +104,9 @@ Identification of water, forests and green spaces and identification of ecologic
 
 ### Method or theory
 
-1.  NDVI (Normalized Difference Vegetation Index) is an index which can be used to assess the health and growth stage of vegetation.
+1.  **NDVI** (Normalized Difference Vegetation Index) is an index which can be used to assess the health and growth stage of vegetation.
 
-2.  NDWI is an index commonly used to monitor water, such as lakes and sea.
+2.  **NDWI** is an index commonly used to monitor water, such as lakes and sea.
 
 3.  Least Cost Corridor
 
