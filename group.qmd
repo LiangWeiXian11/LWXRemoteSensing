@@ -8,7 +8,7 @@
 
 **Problem:**
 
-Hong Kong is a bustling urban area where population growth and the proliferation of buildings have worsened the urban heat island effect. The sheer number of buildings and concrete surfaces in the city absorb and hold onto heat, leading to higher temperatures compared to suburban areas. Changes in land use, like urban sprawl and increased concrete covering, have reduced green spaces, disrupting natural cooling processes and making the urban heat island effect even more severe. During summer, the streets of Hong Kong become filled with hot air from vehicle exhaust and air conditioning units, which gets trapped between the narrow streets and high-rise buildings. This, coupled with the intense summer heat, makes it feel uncomfortably hot and stifling.
+\"Hong Kong is a bustling urban area where population growth and the proliferation of buildings have worsened the urban heat island effect. The sheer number of buildings and concrete surfaces in the city absorb and hold onto heat, leading to higher temperatures compared to suburban areas. Changes in land use, like urban sprawl and increased concrete covering, have reduced green spaces, disrupting natural cooling processes and making the urban heat island effect even more severe. During summer, the streets of Hong Kong become filled with hot air from vehicle exhaust and air conditioning units, which gets trapped between the narrow streets and high-rise buildings. This, coupled with the intense summer heat, makes it feel uncomfortably hot and stifling.\"
 
 There are three directions:
 
@@ -48,7 +48,3 @@ Hong Kong has been implementing various heat relief measures while others argue 
     2.  However, there's also a lack of support for existing building owners to adopt GBA standards. Following a local university's green roof **collapse** in 2016, similar projects were **halted**.
 
 Source: [The Legislative Council.](https://www.legco.gov.hk/research-publications/english/essentials-2021ise04-measures-to-tackle-urban-heat.htm)
-
-
-
-## Reflection
