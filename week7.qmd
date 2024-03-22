@@ -92,6 +92,8 @@ Main processes:
 
 ## Application
 
+In this week, I am going to focus on the **Random Forest** Model. First, I would follow the practical of this week, and then move on the Random Forest applied to **urban issues**.
+
 ### Overall Machine Learning Workflow for Classification (Random Forest Model):
 
 1.  Pre-Processing
@@ -107,6 +109,16 @@ Main processes:
     1.  Confusion Matrix (Error matrix)
 
 [CASA0025: Building Spatial Applications with Big Data - 7  Refinery Identification (oballinger.github.io)](https://oballinger.github.io/CASA0025/W07_refineries.html)
+
+### Application of Random Forest for Urban Flood and Urban heat islands
+
+Tang et al. (2024) proposes a spatiotemporal framework to link UF and UHI by developing an Urban Flood Heat Island (UFHI) index. In this paper, **Random Forest (RF) classifier** and Urban-Rural Dichotomy were selected to compute the spatiotemporal distribution of urban flood and urban heat island, respectively.
+
+As there are lots of **advantages** of RF (such as robust to the noise and insensitive to the parameter setting), this model was employed to compute the probability of UF occurrence in this study and quantify the contribution of the common factors. They found the overall values show the following order: ISP \> LULC \> Elevation \> SWR" (see figure in the next)
+
+![ Relative importance of common factors. (Tang et al., 2024)](img/week7/RF_Application.png)
+
+The amazing result of this research illustrated that **UFS and UHII are spatially and temporally correlated**, so UHI index can be used as a control variable in the refined assessment of UF susceptibility.
 
 ## Reflection
 

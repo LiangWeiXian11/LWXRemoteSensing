@@ -6,7 +6,7 @@
 
 **Remote Sensing (RS)** : acquiring information from a distance (NASA);
 
-![](img/week1/MindMap.png)
+![week 1 mind map.](img/week1/MindMap.png)
 
 **Image of working principles**
 

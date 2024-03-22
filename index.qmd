@@ -2,6 +2,8 @@
 
 I am Liang Weixian from Shenzhen, Guangdong, China. I graduated from South China Agricultural University with a BSc in GIS. Currently, I am working on my MSc in Urban Spatial Science at the Centre for Advanced Spatial Analysis , [CASA](https://www.ucl.ac.uk/bartlett/casa/), an interdisciplinary institute focusing on the science of cities within the Bartlett Faculty of the Built Environment at UCL.
 
+![view of Shenzhen](img/other/Shenzhen.jpg)
+
 I am very interested in smart cities, especially the current progress of smart cities in Shenzhen and Hong Kong. I am also interested in the Historical Trail in GuangDong Province and quantitative inversion of arable land quality as well as building a website for selling pigs. More specifically, I built an interactive StoryMap in Arcgis online to show the historical origins, current situations and future applications of the [South China Historical Trail's](https://www.nanyueguyidao.cn/). Another interesting aspect for me is the construction of a hyperspectral database of the crop. I can use the Java programming language (with some development frameworks) to build the backend of this database system.
 
 I chose this moodle (Remotely Sensing Cities and Environments) to expand and strengthen my remote sensing knowledge, especially in GEE and Earth Observation image processing, and its application to policy making. I hope to put this knowledge into practice in the future, whether looking for a job or starting my own business.
