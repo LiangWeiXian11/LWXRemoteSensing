@@ -4,45 +4,23 @@
 
 This week we mainly talk about two main section, one is correction, another is about images enhancement. There are lots of reasons cause images become incorrect, which will bring lots of inconvenience in further analysis. All these factors will bring some obstacles for our following research. In that case, it is necessary to correct and enhance images. Although there are many methods which can improve the quality of images, different methods need to be chosen carefully for different scenarios and purposes.
 
+![](img/week3/Mind3.png){width="685"}
+
 ### Corrections
 
 #### Geometric correction
 
-Geometric correction refers to the process of correcting distortions in spatial data, particularly in images or maps, to ensure accurate representation of the Earth's surface. The goal of geometric correction is to align the features in the data with their true geographic locations.
+Geometric correction refers to the process of correcting distortions in spatial data, particularly in images or maps, to ensure accurate representation of the Earth's surface. The goal of geometric correction is to align the features in the data with their true geographic locations. We must re-sample the final raster because we can adjust the pixel values of the corrected image to the new pixel grid.
 
-some key points:
+-   **Selection of Control Points:** Control points are identifiable features that have known geographic coordinates. These points are used to establish a relationship between the spatial data and the real-world coordinates. In the spatial data, some **clearly recognisable features or characteristics** are selected, such as **road intersections, building corners, river crossings**, etc. These features should be clearly visible in the image and have a well-defined location geographically.
 
--   Selection of Control Points
-
-    Control points are identifiable features that have known geographic coordinates. These points are used to establish a relationship between the spatial data and the real-world coordinates.
-
--   how to select ?
-
-    In the spatial data, some **clearly recognisable features or characteristics** are selected, such as **road intersections, building corners, river crossings**, etc. These features should be clearly visible in the image and have a well-defined location geographically.
-
--   Transformation Model
-
-    \-- the relationship between the control points (the spatial data) and their corresponding real-world coordinates. Common transformation models include polynomial transformations, affine transformations, or rubber sheeting.
-
--   Resampling
-
-    -   Nearest Neighbor
-
-    -   Linear
-
-    -   Cubic
-
-    -   Cubic spline
-
-we must re-sample the final raster because we can adjust the pixel values of the corrected image to the new pixel grid.
+-   **Transformation Model**: the relationship between the control points (the spatial data) and their corresponding real-world coordinates. Common transformation models include polynomial transformations, affine transformations, or rubber sheeting.
 
 #### Atmospheric correction
 
 Atmospheric corrections help to remove the effects of atmospheric media (which would reduce contrast of image) on remotely sensed images in order to obtain more accurate surface reflectance or radiance values, resulting in better contrast between images acquired at different times and locations.
 
-**How to do?**
-
-Dark object subtraction (DOS): Searches each band for the darkest value then subtracts that from each pixel. (Some objects' DN values are theoretically 0, such as deep water bodies or shadows.Therefore, any value that it has can be attributed to the atmosphere and need to be removed.
+**How to do? -- Dark object subtraction (DOS)**: Searches each band for the darkest value then subtracts that from each pixel. (Some objects' DN values are theoretically 0, such as deep water bodies or shadows.Therefore, any value that it has can be attributed to the atmosphere and need to be removed.
 
 #### Topographic correction
 
@@ -50,33 +28,13 @@ Orthorectification is a geometric correction process applied to satellite or aer
 
 #### Radiometric correction
 
-**convert TOA radiance to TOA reflectance**
+**Convert TOA radiance to TOA reflectance**
 
--   Radiance is how much light the sensor sees.
+-   **Radiance** is how much light the sensor sees.
 
--   Reflectance is the ratio of light leaving the target to amount striking the target. Here will still have atmopsheric effects in the way of our true apparent reflectance. Confusingly all of these can be termed reflectance and indeed sometimes radiance is referred to as reflectance.
+-   **Reflectance** is the ratio of light leaving the target to amount striking the target. Here will still have atmopsheric effects in the way of our true apparent reflectance. Confusingly all of these can be termed reflectance and indeed sometimes radiance is referred to as reflectance.
 
-The purpose of radiometric correction is to standardize pixel values across an image, making it more consistent and suitable for quantitative analysis.
-
-#### Different level
-
-1.  Level 1 is delivered as a Digital Number (DN 值)
-
-2.  Level 2 includes surface reflectance and surface temperature
-
-3.  Level 3 science products are specific products generated from the data such as Burned Area, surface water extent
-
-### enhancement
-
-#### Radio
-
--   NDVI: (NIR-RED) / (NIR+RED)
-
--   NDWI: (NIR - SWIR) / (NIR + SWIR)
-
-    ( NIR is the reflectance in the near-infrared band; SWIR is the reflectance in the shortwave infrared band.)
-
-#### PCA
+### PCA
 
 Principal Component Analysis (PCA) is designed to reduce the **dimensionality** of our data.
 
@@ -98,37 +56,31 @@ PCA chooses the new axes sequentially one after another\--PCA looks at the data 
 
 [Cracking Principal Components Analysis (PCA) --- Part 2 \| by Hyeon Gu Kim \| Medium](https://grantkim94.medium.com/cracking-principal-components-analysis-pca-part-2-344bcb4264dc)
 
-### Filtering
-
--   Filtering refers to any kind of moving window operation to our data which can be saved as a separate raster file. As we saw in the lecture this can include low or high pass filters.
-
-#### low pass
-
-a smoothing (low-pass filter 低通滤波) algorithm will take the mean value of a 3-x-3 cell kernel, and place the output value in the location of the central cell.
-
-#### high pass
-
-**Edge enhancement**:
-
--   accentuates or highlights the boundaries and edges of objects within an image.
-
--   The goal is to make the edges more visually prominent and improve the overall sharpness and clarity of the image
-
-Where is edge? the **change** in pixel values
-
 ## Application
 
-### application of Corrections
+### Application of Corrections
 
 **Digitising paper maps** is a process of aligning paper maps with modern geographic coordinate systems so that they can be used for vectorisation and integration with other GIS datasets. This process can facilitate the effective use of historical maps, house plans, etc. in a modern GIS environment. (Geometric correction)
 
 **NDVI** is an index of vegetation condition that is based on reflectance in the red and near-infrared bands, and therefore atmospheric influences need to be taken into account before it can be calculated. Atmospheric correction is crucial for precise quantitative analysis and vegetation monitoring. If your application requires accurate reflectance values or vegetation indices, it is advisable to conduct atmospheric correction to eliminate atmospheric effects. (Atmospheric correction)
 
-### enhancement
+### Transformation for building models
 
-#### PCA
+Based on the different soil hyperspectral data and its soil salt content, and using different spectral transformation methods including logarithm, RMS, continuum removal, first-order, second-order RMS and so on.
 
-#### smooth
+Wang et al. (2016) established a soil salinization monitoring model to achieve the high-precision quantitative inversion of soil salinity. Compared to a model (**R2 = 0.59**) based on traditional multi-spectral remote sensing technology, the model which converted by different transformation especially **the first-order differential spectral transformation** showed better effect (**R2 = 0.7**).
+
+### Transformation for studying CO2 emissions
+
+Many researchers briefly suggested studying the changes in CO2 emissions and CO2 in the atmosphere over time by applying mathematical equations known as differential equations (Tsokos C P and Xu Y., 2009). **Differential equations** can help us understand how the response variable **changes over time**. It is more interesting to understand the rate of change of CO2 emissions in the short and long term than to study the emissions themselves (Ram C. Kafle et al., 2019; J.O. Ramsay and B.W. Silverman, 2005.).
+
+For example, if we performed the simple linear regression to figure out the relation between GDP and CO2 emissions, the R square is high (**0.77**). However, if we use differential data, the R-square of the linear regression between differential data of GDP and CO2 emissions is only **0.16**.
+
+::: {style="display: flex; justify-content: center;"}
+<img src="img/week3/Regression1.png" style="margin-right: 20px;" width="44%"/> <img src="img/week3/Regression2.png" style="margin-left: 20px;" width="46%"/>
+:::
+
+Therefore, in this case, we can perform **a differential transformation** on the CO2 emissions data and then obtain differential data for the following regression analysis in order to understand the change in CO2 emissions over time.
 
 ## Reflection
 

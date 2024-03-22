@@ -2,57 +2,15 @@
 
 ## Summary
 
-### what is the RS
+### What is the RS
 
-**Remote Sensing (RS)** == acquiring information from a distance by NASA
+**Remote Sensing (RS)** : acquiring information from a distance (NASA);
 
-**Overall**:
+![](img/week1/MindMap.png)
 
--   Active and passive remote sensing
+**Image of working principles**
 
--   Considered how electromagnetic waves interact with
-
-    -   Earth's surface
-
-    -   Atmosphere
-
--   Explored the 4 resolutions of remotely sensed data
-
-    -   Spectral
-
-    -   Spatial
-
-    -   Temporal
-
-    -   Radiometric
-
--   Identified how constraints (environmental or sensor) can dictate the choice of data we use.
-
-### two types of sensor:
-
-**Passive:**
-
--   Use energy that is available
-
--   Don't emit anything
-
--   Detecting reflected energy from the sun
-
--   Energy is in electromagnetic waves
-
--   Such as: Human eye, camera, satellite sensor
-
-**Active:**
-
--   Have an energy source for illumination
-
--   Actively emits electormagentic waves and then waits to receive
-
--   Such as: Radar, X-ray, LiDAR
-
-**image of working principles**
-
-![Passive and active sensors systems working principles. Source: [Nadhir Al-Ansari](https://www.researchgate.net/figure/Passive-and-active-sensors-systems-working-principles-24_fig2_344464269)](img/week1/PassiveActiveSensors.png)
+![Passive and active sensors systems working principles. Source: [Nadhir Al-Ansari](https://www.researchgate.net/figure/Passive-and-active-sensors-systems-working-principles-24_fig2_344464269)](img/week1/PassiveActiveSensors.png){width="583"}
 
 ### Electromagnetic radiation (EMR)
 
@@ -78,7 +36,7 @@ Atmospheric scattering is a fundamental process in physics and atmospheric scien
 
 3.  Firstly, the number of air molecules the beam of light encounters. The more air molecules or the greater amount of atmosphere which the light beam encounters, the greater the scattering.
 
-4.  Secondly, **the shorter the wavelength of the light the greater the scattering**. So if we take a beam of light such as that from the Sun, which contains multiple colours, then the shorter wavelengths (violet, indigo and blue light) are scattered more than the longer wavelengths such as orange and red.
+4.  Secondly, **the shorter the wavelength of the light the greater the scattering**. So if we take a beam of light such as that from the Sun, which contains multiple colours, then the shorter wavelengths (violet, indigo and blue light) are scattered more than the longer wavelengths such as orange and red.
 
 ![Different colors. Source: [Explaining Science](https://explainingscience.org/2015/09/30/why-is-the-sky-blue/)](img/week1/redsunsetdiagram1.png)
 
@@ -87,18 +45,16 @@ Atmospheric scattering is a fundamental process in physics and atmospheric scien
 ### Synthetic Aperture Radar (SAR)
 
 -   Collects data on various weather conditions
+
     -   as Wavelength dictates how far it can penetrate into medium, it can See through clouds, volcanic ash and atmospheric conditions
     -   SAR uses microwave signals, which travel through the atmosphere with relatively little interference. This means that even in rainy weather or dense fog, SAR is able to penetrate these weather layers and acquire information on the surface of the earth.
+
 -   Collects data at night
+
     -   SAR systems are usually equipped with their own transmitting sources, so they are not dependent on external light sources and can provide reliable imaging capability at any time of day.
     -   Thus, the availability of SAR in the dark makes it a powerful tool for monitoring the Earth's surface on a 24-hour basis, especially when emergency response or disaster monitoring is required.
 
-### Data formats
-
--   band interleaved by line (BIL)
--   band sequential (BSQ)
--   band interleaved by pixel (BIP)
--   GeoTIFF (most common)
+    See more detail in [week 9](https://liangweixian11.github.io/LWXRemoteSensing/week9.html)
 
 ## Reflection
 
@@ -108,22 +64,16 @@ In addition, by learning about active (using Synthetic Aperture Radar (SAR) as a
 
 ### New terms
 
--   Electromagnetic radiation 电磁辐射
+-   Electromagnetic radiation: the energy emitted and propagated through space in the form of electromagnetic waves
 
--   scatter 散射
+-   scatter: how electromagnetic radiation interacts with particles or surfaces, altering its direction
 
--   particles 粒子
+-   particles 
 
--   molecules 微粒
+-   molecules 
 
--   spectral signature 光谱特征
+-   spectral signature: different features with unique radiation pattern
 
-    -   different features with unique radiation pattern
+-   radiant energy: Energy carried by EMR waves
 
--   radiant energy 辐射能
-
-    -   Energy carried by EMR waves
-
--   radiant flux 辐射通量
-
-    -   Energy per unit of time
+-   radiant flux: Energy per unit of time

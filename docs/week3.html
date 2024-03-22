@@ -114,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week2 ppt – to be done</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week2 ppt</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -131,26 +131,44 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./week5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./week6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 6 GEE</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6 GEE</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 7 to be done</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7 Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./week8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 8 to be done</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8 Advanced Classification</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Week 9 SAR</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./group.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Group</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -172,13 +190,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
   <ul class="collapse">
   <li><a href="#corrections" id="toc-corrections" class="nav-link" data-scroll-target="#corrections"><span class="header-section-number">3.1.1</span> Corrections</a></li>
-  <li><a href="#enhancement" id="toc-enhancement" class="nav-link" data-scroll-target="#enhancement"><span class="header-section-number">3.1.2</span> enhancement</a></li>
-  <li><a href="#filtering" id="toc-filtering" class="nav-link" data-scroll-target="#filtering"><span class="header-section-number">3.1.3</span> Filtering</a></li>
+  <li><a href="#pca" id="toc-pca" class="nav-link" data-scroll-target="#pca"><span class="header-section-number">3.1.2</span> PCA</a></li>
   </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">3.2</span> Application</a>
   <ul class="collapse">
-  <li><a href="#application-of-corrections" id="toc-application-of-corrections" class="nav-link" data-scroll-target="#application-of-corrections"><span class="header-section-number">3.2.1</span> application of Corrections</a></li>
-  <li><a href="#enhancement-1" id="toc-enhancement-1" class="nav-link" data-scroll-target="#enhancement-1"><span class="header-section-number">3.2.2</span> enhancement</a></li>
+  <li><a href="#application-of-corrections" id="toc-application-of-corrections" class="nav-link" data-scroll-target="#application-of-corrections"><span class="header-section-number">3.2.1</span> Application of Corrections</a></li>
+  <li><a href="#transformation-for-building-models" id="toc-transformation-for-building-models" class="nav-link" data-scroll-target="#transformation-for-building-models"><span class="header-section-number">3.2.2</span> Transformation for building models</a></li>
+  <li><a href="#transformation-for-studying-co2-emissions" id="toc-transformation-for-studying-co2-emissions" class="nav-link" data-scroll-target="#transformation-for-studying-co2-emissions"><span class="header-section-number">3.2.3</span> Transformation for studying CO2 emissions</a></li>
   </ul></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
   </ul>
@@ -207,34 +225,21 @@ ul.task-list li input[type="checkbox"] {
 <section id="summary" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
 <p>This week we mainly talk about two main section, one is correction, another is about images enhancement. There are lots of reasons cause images become incorrect, which will bring lots of inconvenience in further analysis. All these factors will bring some obstacles for our following research. In that case, it is necessary to correct and enhance images. Although there are many methods which can improve the quality of images, different methods need to be chosen carefully for different scenarios and purposes.</p>
+<p><img src="img/week3/Mind3.png" class="img-fluid" width="685"></p>
 <section id="corrections" class="level3" data-number="3.1.1">
 <h3 data-number="3.1.1" class="anchored" data-anchor-id="corrections"><span class="header-section-number">3.1.1</span> Corrections</h3>
 <section id="geometric-correction" class="level4" data-number="3.1.1.1">
 <h4 data-number="3.1.1.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">3.1.1.1</span> Geometric correction</h4>
-<p>Geometric correction refers to the process of correcting distortions in spatial data, particularly in images or maps, to ensure accurate representation of the Earth’s surface. The goal of geometric correction is to align the features in the data with their true geographic locations.</p>
-<p>some key points:</p>
+<p>Geometric correction refers to the process of correcting distortions in spatial data, particularly in images or maps, to ensure accurate representation of the Earth’s surface. The goal of geometric correction is to align the features in the data with their true geographic locations. We must re-sample the final raster because we can adjust the pixel values of the corrected image to the new pixel grid.</p>
 <ul>
-<li><p>Selection of Control Points</p>
-<p>Control points are identifiable features that have known geographic coordinates. These points are used to establish a relationship between the spatial data and the real-world coordinates.</p></li>
-<li><p>how to select ?</p>
-<p>In the spatial data, some <strong>clearly recognisable features or characteristics</strong> are selected, such as <strong>road intersections, building corners, river crossings</strong>, etc. These features should be clearly visible in the image and have a well-defined location geographically.</p></li>
-<li><p>Transformation Model</p>
-<p>-- the relationship between the control points (the spatial data) and their corresponding real-world coordinates. Common transformation models include polynomial transformations, affine transformations, or rubber sheeting.</p></li>
-<li><p>Resampling</p>
-<ul>
-<li><p>Nearest Neighbor</p></li>
-<li><p>Linear</p></li>
-<li><p>Cubic</p></li>
-<li><p>Cubic spline</p></li>
-</ul></li>
+<li><p><strong>Selection of Control Points:</strong> Control points are identifiable features that have known geographic coordinates. These points are used to establish a relationship between the spatial data and the real-world coordinates. In the spatial data, some <strong>clearly recognisable features or characteristics</strong> are selected, such as <strong>road intersections, building corners, river crossings</strong>, etc. These features should be clearly visible in the image and have a well-defined location geographically.</p></li>
+<li><p><strong>Transformation Model</strong>: the relationship between the control points (the spatial data) and their corresponding real-world coordinates. Common transformation models include polynomial transformations, affine transformations, or rubber sheeting.</p></li>
 </ul>
-<p>we must re-sample the final raster because we can adjust the pixel values of the corrected image to the new pixel grid.</p>
 </section>
 <section id="atmospheric-correction" class="level4" data-number="3.1.1.2">
 <h4 data-number="3.1.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.1.2</span> Atmospheric correction</h4>
 <p>Atmospheric corrections help to remove the effects of atmospheric media (which would reduce contrast of image) on remotely sensed images in order to obtain more accurate surface reflectance or radiance values, resulting in better contrast between images acquired at different times and locations.</p>
-<p><strong>How to do?</strong></p>
-<p>Dark object subtraction (DOS): Searches each band for the darkest value then subtracts that from each pixel. (Some objects’ DN values are theoretically 0, such as deep water bodies or shadows.Therefore, any value that it has can be attributed to the atmosphere and need to be removed.</p>
+<p><strong>How to do? – Dark object subtraction (DOS)</strong>: Searches each band for the darkest value then subtracts that from each pixel. (Some objects’ DN values are theoretically 0, such as deep water bodies or shadows.Therefore, any value that it has can be attributed to the atmosphere and need to be removed.</p>
 </section>
 <section id="topographic-correction" class="level4" data-number="3.1.1.3">
 <h4 data-number="3.1.1.3" class="anchored" data-anchor-id="topographic-correction"><span class="header-section-number">3.1.1.3</span> Topographic correction</h4>
@@ -242,34 +247,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="radiometric-correction" class="level4" data-number="3.1.1.4">
 <h4 data-number="3.1.1.4" class="anchored" data-anchor-id="radiometric-correction"><span class="header-section-number">3.1.1.4</span> Radiometric correction</h4>
-<p><strong>convert TOA radiance to TOA reflectance</strong></p>
+<p><strong>Convert TOA radiance to TOA reflectance</strong></p>
 <ul>
-<li><p>Radiance is how much light the sensor sees.</p></li>
-<li><p>Reflectance is the ratio of light leaving the target to amount striking the target. Here will still have atmopsheric effects in the way of our true apparent reflectance. Confusingly all of these can be termed reflectance and indeed sometimes radiance is referred to as reflectance.</p></li>
-</ul>
-<p>The purpose of radiometric correction is to standardize pixel values across an image, making it more consistent and suitable for quantitative analysis.</p>
-</section>
-<section id="different-level" class="level4" data-number="3.1.1.5">
-<h4 data-number="3.1.1.5" class="anchored" data-anchor-id="different-level"><span class="header-section-number">3.1.1.5</span> Different level</h4>
-<ol type="1">
-<li><p>Level 1 is delivered as a Digital Number (DN 值)</p></li>
-<li><p>Level 2 includes surface reflectance and surface temperature</p></li>
-<li><p>Level 3 science products are specific products generated from the data such as Burned Area, surface water extent</p></li>
-</ol>
-</section>
-</section>
-<section id="enhancement" class="level3" data-number="3.1.2">
-<h3 data-number="3.1.2" class="anchored" data-anchor-id="enhancement"><span class="header-section-number">3.1.2</span> enhancement</h3>
-<section id="radio" class="level4" data-number="3.1.2.1">
-<h4 data-number="3.1.2.1" class="anchored" data-anchor-id="radio"><span class="header-section-number">3.1.2.1</span> Radio</h4>
-<ul>
-<li><p>NDVI: (NIR-RED) / (NIR+RED)</p></li>
-<li><p>NDWI: (NIR - SWIR) / (NIR + SWIR)</p>
-<p>( NIR is the reflectance in the near-infrared band; SWIR is the reflectance in the shortwave infrared band.)</p></li>
+<li><p><strong>Radiance</strong> is how much light the sensor sees.</p></li>
+<li><p><strong>Reflectance</strong> is the ratio of light leaving the target to amount striking the target. Here will still have atmopsheric effects in the way of our true apparent reflectance. Confusingly all of these can be termed reflectance and indeed sometimes radiance is referred to as reflectance.</p></li>
 </ul>
 </section>
-<section id="pca" class="level4" data-number="3.1.2.2">
-<h4 data-number="3.1.2.2" class="anchored" data-anchor-id="pca"><span class="header-section-number">3.1.2.2</span> PCA</h4>
+</section>
+<section id="pca" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="pca"><span class="header-section-number">3.1.2</span> PCA</h3>
 <p>Principal Component Analysis (PCA) is designed to reduce the <strong>dimensionality</strong> of our data.</p>
 <p>Running the summary will given the proportion of <strong>variance</strong> explained by each PCA component and the cumulative proportion of the variance explained (from all the PCA layers <em>compared to</em> the original input data). Overall, PCA is trying to:</p>
 <ul>
@@ -284,41 +270,26 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://grantkim94.medium.com/cracking-principal-components-analysis-pca-part-2-344bcb4264dc">Cracking Principal Components Analysis (PCA) — Part 2 | by Hyeon Gu Kim | Medium</a></p>
 </section>
 </section>
-<section id="filtering" class="level3" data-number="3.1.3">
-<h3 data-number="3.1.3" class="anchored" data-anchor-id="filtering"><span class="header-section-number">3.1.3</span> Filtering</h3>
-<ul>
-<li>Filtering refers to any kind of moving window operation to our data which can be saved as a separate raster file. As we saw in the lecture this can include low or high pass filters.</li>
-</ul>
-<section id="low-pass" class="level4" data-number="3.1.3.1">
-<h4 data-number="3.1.3.1" class="anchored" data-anchor-id="low-pass"><span class="header-section-number">3.1.3.1</span> low pass</h4>
-<p>a smoothing (low-pass filter 低通滤波) algorithm will take the mean value of a 3-x-3 cell kernel, and place the output value in the location of the central cell.</p>
-</section>
-<section id="high-pass" class="level4" data-number="3.1.3.2">
-<h4 data-number="3.1.3.2" class="anchored" data-anchor-id="high-pass"><span class="header-section-number">3.1.3.2</span> high pass</h4>
-<p><strong>Edge enhancement</strong>:</p>
-<ul>
-<li><p>accentuates or highlights the boundaries and edges of objects within an image.</p></li>
-<li><p>The goal is to make the edges more visually prominent and improve the overall sharpness and clarity of the image</p></li>
-</ul>
-<p>Where is edge? the <strong>change</strong> in pixel values</p>
-</section>
-</section>
-</section>
 <section id="application" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
 <section id="application-of-corrections" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="application-of-corrections"><span class="header-section-number">3.2.1</span> application of Corrections</h3>
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="application-of-corrections"><span class="header-section-number">3.2.1</span> Application of Corrections</h3>
 <p><strong>Digitising paper maps</strong> is a process of aligning paper maps with modern geographic coordinate systems so that they can be used for vectorisation and integration with other GIS datasets. This process can facilitate the effective use of historical maps, house plans, etc. in a modern GIS environment. (Geometric correction)</p>
 <p><strong>NDVI</strong> is an index of vegetation condition that is based on reflectance in the red and near-infrared bands, and therefore atmospheric influences need to be taken into account before it can be calculated. Atmospheric correction is crucial for precise quantitative analysis and vegetation monitoring. If your application requires accurate reflectance values or vegetation indices, it is advisable to conduct atmospheric correction to eliminate atmospheric effects. (Atmospheric correction)</p>
 </section>
-<section id="enhancement-1" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="enhancement-1"><span class="header-section-number">3.2.2</span> enhancement</h3>
-<section id="pca-1" class="level4" data-number="3.2.2.1">
-<h4 data-number="3.2.2.1" class="anchored" data-anchor-id="pca-1"><span class="header-section-number">3.2.2.1</span> PCA</h4>
+<section id="transformation-for-building-models" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="transformation-for-building-models"><span class="header-section-number">3.2.2</span> Transformation for building models</h3>
+<p>Based on the different soil hyperspectral data and its soil salt content, and using different spectral transformation methods including logarithm, RMS, continuum removal, first-order, second-order RMS and so on.</p>
+<p>Wang et al.&nbsp;(2016) established a soil salinization monitoring model to achieve the high-precision quantitative inversion of soil salinity. Compared to a model (<strong>R2 = 0.59</strong>) based on traditional multi-spectral remote sensing technology, the model which converted by different transformation especially <strong>the first-order differential spectral transformation</strong> showed better effect (<strong>R2 = 0.7</strong>).</p>
 </section>
-<section id="smooth" class="level4" data-number="3.2.2.2">
-<h4 data-number="3.2.2.2" class="anchored" data-anchor-id="smooth"><span class="header-section-number">3.2.2.2</span> smooth</h4>
-</section>
+<section id="transformation-for-studying-co2-emissions" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="transformation-for-studying-co2-emissions"><span class="header-section-number">3.2.3</span> Transformation for studying CO2 emissions</h3>
+<p>Many researchers briefly suggested studying the changes in CO2 emissions and CO2 in the atmosphere over time by applying mathematical equations known as differential equations (Tsokos C P and Xu Y., 2009). <strong>Differential equations</strong> can help us understand how the response variable <strong>changes over time</strong>. It is more interesting to understand the rate of change of CO2 emissions in the short and long term than to study the emissions themselves (Ram C. Kafle et al., 2019; J.O. Ramsay and B.W. Silverman, 2005.).</p>
+<p>For example, if we performed the simple linear regression to figure out the relation between GDP and CO2 emissions, the R square is high (<strong>0.77</strong>). However, if we use differential data, the R-square of the linear regression between differential data of GDP and CO2 emissions is only <strong>0.16</strong>.</p>
+<div style="display: flex; justify-content: center;">
+<p><img src="img/week3/Regression1.png" style="margin-right: 20px;" width="44%"> <img src="img/week3/Regression2.png" style="margin-left: 20px;" width="46%"></p>
+</div>
+<p>Therefore, in this case, we can perform <strong>a differential transformation</strong> on the CO2 emissions data and then obtain differential data for the following regression analysis in order to understand the change in CO2 emissions over time.</p>
 </section>
 </section>
 <section id="reflection" class="level2" data-number="3.3">
@@ -565,7 +536,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./week2.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week2 ppt – to be done</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week2 ppt</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
