@@ -1,4 +1,10 @@
 # References {.unnumbered}
 
 ::: {#refs}
+@article{knuth84, author = {Knuth, Donald E.}, title = {Literate Programming}, year = {1984}, issue_date = {May 1984}, publisher = {Oxford University Press, Inc.}, address = {USA}, volume = {27}, number = {2}, issn = {0010-4620}, url = {https://doi.org/10.1093/comjnl/27.2.97}, doi = {10.1093/comjnl/27.2.97}, journal = {Comput. J.}, month = may, pages = {97--111}, numpages = {15} }
 :::
+
+Ok, A.O., Akar, O., Gungor, O., 2012. Evaluation of random forest method for agricultural crop classification. European Journal of Remote Sensing 45, 421–432. https://doi.org/10.5721/EuJRS20124535
+
+Vavlas, N.-C., Waine, T.W., Meersmans, J., Burgess, P.J., Fontanelli, G., Richter, G.M., 2020. Deriving Wheat Crop Productivity Indicators Using Sentinel-1 Time Series. Remote Sensing 12, 2385. https://doi.org/10.3390/rs12152385
+
