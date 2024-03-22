@@ -15,3 +15,5 @@ Ram C. Kafle, Keshav P. Pokhrel, Netra Khanal & Chris P. Tsokos (2019) Different
 J.O. Ramsay and B.W. Silverman, Functional Data Analysis, 2nd ed. Springer, New York, 2005.
 
 Tsokos C P, Xu Y. Modeling carbon dioxide emissions with a system of differential equations\[J\]. Nonlinear Analysis: Theory, Methods & Applications, 2009, 71(12): e1182-e1197.
+
+Tang, X., Huang, X., Tian, J., Jiang, Y., Ding, X., Liu, W., 2024. A spatiotemporal framework for the joint risk assessments of urban flood and urban heat island. International Journal of Applied Earth Observation and Geoinformation 127, 103686. <https://doi.org/10.1016/j.jag.2024.103686>
