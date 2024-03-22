@@ -66,7 +66,7 @@ PCA chooses the new axes sequentially one after another\--PCA looks at the data 
 
 ### Transformation for building models
 
-Based on the different soil hyperspectral data and its soil salt content, and using different spectral transformation methods including logarithm, RMS, continuum removal, first-order, second-order RMS and so on.
+Transformation methods in modeling offer benefits such as obtaining interpretable features, standardization (log-transfer), reducing data dimensionality or complexity and so on. In terms of land monitoring, we can choose different spectral transformation methods, including logarithm, RMS, continuum removal, first-order, second-order RMS and so on.
 
 Wang et al. (2016) established a soil salinization monitoring model to achieve the high-precision quantitative inversion of soil salinity. Compared to a model (**R2 = 0.59**) based on traditional multi-spectral remote sensing technology, the model which converted by different transformation especially **the first-order differential spectral transformation** showed better effect (**R2 = 0.7**).
 

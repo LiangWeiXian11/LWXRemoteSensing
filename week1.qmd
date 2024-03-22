@@ -68,9 +68,9 @@ In addition, by learning about active (using Synthetic Aperture Radar (SAR) as a
 
 -   scatter: how electromagnetic radiation interacts with particles or surfaces, altering its direction
 
--   particles 
+-   particles
 
--   molecules 
+-   molecules
 
 -   spectral signature: different features with unique radiation pattern
 
